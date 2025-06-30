@@ -3,42 +3,59 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konciza Etimologia Vortaro</title>
     <style>
         body {
             font-family: sans-serif;
             text-align: center;
             padding: 1em;
+            margin: 0;
         }
 
         img {
-            max-width: 90%;
+            max-width: 100%;
             height: auto;
             margin-top: 1em;
             border: 1px solid #ccc;
         }
 
+        .kontroloj {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5em;
+            margin-top: 1em;
+        }
+
         input {
             font-size: 1em;
-            padding: 0.3em;
-            width: 200px;
+            padding: 0.5em;
+            flex: 1 1 150px;
+            min-width: 150px;
+            max-width: 300px;
         }
 
         button {
             font-size: 1em;
-            padding: 0.3em;
-            margin-left: 0.5em;
+            padding: 0.5em;
+            flex: 0 0 auto;
+        }
+
+        #rezulto {
+            margin-top: 1em;
         }
     </style>
 </head>
 
 <body>
     <h1>Konciza Etimologia Vortaro</h1>
-    <input type="text" id="sercxo" placeholder="Entajpu vorton..." />
-    <button onclick="sercxi()">Serĉi</button>
-    <button onclick="antauxa()">◀ Antaŭa</button>
-    <button onclick="sekva()">Sekva ▶</button>
-
+    <div class="kontroloj">
+        <input type="text" id="sercxo" placeholder="Entajpu vorton..." />
+        <button onclick="sercxi()">Ek</button>
+        <button onclick="antauxa()">◀</button>
+        <button onclick="sekva()">▶</button>
+    </div>
     <div id="rezulto"></div>
 
     <script>
