@@ -28,12 +28,19 @@ document.getElementById('sercxo').addEventListener('keydown', function (event) {
     }
 });
 
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowRight') {
+        sekva();
+    } else if (event.key === 'ArrowLeft') {
+        antauxa();
+    }
+});
+
 function montriBildon(indekso) {
     if (indekso < 0 || indekso >= listoDeVortoj.length) return;
     nunaIndekso = indekso;
-    const numero = (indekso + 15).toString().padStart(3, "0");
+    const numero = (indekso + 1).toString().padStart(3, "0");
     const bildoUrl = bazoVojo + `bildo${numero}.webp`;
-    const vorto = listoDeVortoj[indekso];
     document.getElementById('rezulto').innerHTML =
         `<img src="${bildoUrl}" alt="Paĝo de vortaro">`;
 }
@@ -59,9 +66,17 @@ function sercxi() {
 }
 
 function antauxa() {
-    if (nunaIndekso > 0) montriBildon(nunaIndekso - 1);
+    if (nunaIndekso <= 0) {
+        montriBildon(listoDeVortoj.length - 1);
+    } else {
+        montriBildon(nunaIndekso - 1);
+    }
 }
 
 function sekva() {
-    if (nunaIndekso < listoDeVortoj.length - 1) montriBildon(nunaIndekso + 1);
+    if (nunaIndekso >= listoDeVortoj.length - 1) {
+        montriBildon(0); // ciklo al la unua
+    } else {
+        montriBildon(nunaIndekso + 1);
+    }
 }

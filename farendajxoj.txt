@@ -1,7 +1,5 @@
-Prilabori -a, -acoj ktp.
-Montri la unuan paĝon post la lasta.
-Montri la lastan paĝon post la unua.
+Forigi neesperantajn literojn el la enigo, sed permesi paĝnumerojn.
 Serĉi vorton per la Esperanta alfabeta ordo.
 Serĉi paĝon per numero.
-Movi armo de p. 34 al p. 35 ktp.
 Montri KEV anstataŭ Konciza Etimologia Vortaro ĉe malgranda vido kiel poŝtelefono.
+Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
