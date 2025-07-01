@@ -25,16 +25,30 @@ fetch('indeksoj.json')
 document.getElementById('sercxo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         sercxi();
+        this.blur(); // movi la fokuson for
     }
 });
 
 document.addEventListener('keydown', function (event) {
+    if (document.activeElement.tagName === 'INPUT') {
+        return;
+    }
     if (event.key === 'ArrowRight') {
         sekva();
     } else if (event.key === 'ArrowLeft') {
         antauxa();
     }
 });
+
+function konvertiXsistemon(teksto) {
+    return teksto
+        .replace(/cx/g, "ĉ")
+        .replace(/gx/g, "ĝ")
+        .replace(/hx/g, "ĥ")
+        .replace(/jx/g, "ĵ")
+        .replace(/sx/g, "ŝ")
+        .replace(/ux/g, "ŭ");
+}
 
 function montriBildon(indekso) {
     if (indekso < 0 || indekso >= listoDeVortoj.length) return;
@@ -46,22 +60,42 @@ function montriBildon(indekso) {
 }
 
 function sercxi() {
-    const enigo = document.getElementById('sercxo').value.trim().toLowerCase();
+    let enigo = document.getElementById('sercxo').value.trim().toLowerCase();
     if (!enigo) return;
-    let trovita = -1;
-    for (let i = listoDeVortoj.length - 1; i >= 0; i--) {
-        if (listoDeVortoj[i]) {
-            listoDeVortoj[i] = listoDeVortoj[i].split("/")[0].toLowerCase();
-            if (enigo >= listoDeVortoj[i]) {
-                trovita = i;
-                break;
+
+    // Ĉu estas nur ciferoj?
+    if (/^\d+$/.test(enigo)) {
+        let numero = parseInt(enigo, 10);
+        if (numero < 1) {
+            numero = 1;
+        } else if (numero > 504) {
+            numero = 504;
+        }
+        montriBildon(numero + 13);
+        return;
+    }
+
+    // Ĉu estas nur permesataj literoj?
+    enigo = konvertiXsistemon(enigo);
+    if (/^[abcĉdefgĝhĥijĵklmnoprsŝtuŭvz]+$/.test(enigo)) {
+        let trovita = -1;
+        for (let i = listoDeVortoj.length - 1; i >= 0; i--) {
+            if (listoDeVortoj[i]) {
+                const nurVorto = listoDeVortoj[i].split("/")[0].toLowerCase();
+                if (enigo >= nurVorto) {
+                    trovita = i;
+                    break;
+                }
             }
         }
-    }
-    if (trovita >= 0) {
-        montriBildon(trovita);
+        if (trovita >= 0) {
+            montriBildon(trovita);
+        } else {
+            document.getElementById('rezulto').innerHTML = 'Neniu kongruo trovita.';
+        }
     } else {
-        document.getElementById('rezulto').innerHTML = 'Neniu kongruo trovita.';
+        // Se miksita aŭ enhavas nepermesatajn signojn
+        document.getElementById('rezulto').innerHTML = 'Bonvolu tajpi validan vorton kun nur esperantaj literoj (inkluzive ĉ aŭ cx, ktp) aŭ paĝnumeron.';
     }
 }
 
