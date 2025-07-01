@@ -22,6 +22,12 @@ fetch('indeksoj.json')
         console.error(eraro);
     });
 
+document.getElementById('sercxo').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        sercxi();
+    }
+});
+
 function montriBildon(indekso) {
     if (indekso < 0 || indekso >= listoDeVortoj.length) return;
     nunaIndekso = indekso;
@@ -29,8 +35,7 @@ function montriBildon(indekso) {
     const bildoUrl = bazoVojo + `bildo${numero}.webp`;
     const vorto = listoDeVortoj[indekso];
     document.getElementById('rezulto').innerHTML =
-        `<div><strong>${vorto}</strong></div>
-     <img src="${bildoUrl}" alt="Paĝo de vortaro">`;
+        `<img src="${bildoUrl}" alt="Paĝo de vortaro">`;
 }
 
 function sercxi() {
@@ -38,9 +43,12 @@ function sercxi() {
     if (!enigo) return;
     let trovita = -1;
     for (let i = listoDeVortoj.length - 1; i >= 0; i--) {
-        if (enigo >= listoDeVortoj[i].toLowerCase()) {
-            trovita = i;
-            break;
+        if (listoDeVortoj[i]) {
+            listoDeVortoj[i] = listoDeVortoj[i].split("/")[0].toLowerCase();
+            if (enigo >= listoDeVortoj[i]) {
+                trovita = i;
+                break;
+            }
         }
     }
     if (trovita >= 0) {
