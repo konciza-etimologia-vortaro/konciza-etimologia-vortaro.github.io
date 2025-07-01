@@ -58,60 +58,7 @@
     </div>
     <div id="rezulto"></div>
 
-    <script>
-        let indeksoj = [];
-        let nunaIndekso = -1;
-
-        let bazoUrl = '';
-        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            bazoUrl = '../kev-webp/';
-        } else {
-            bazoUrl = 'https://konciza-etimologia-vortaro.github.io/kev-webp/';
-        }
-
-        fetch('indeksoj.json')
-            .then(response => response.json())
-            .then(data => {
-                indeksoj = data;
-            })
-            .catch(err => {
-                document.getElementById('rezulto').innerText = 'Eraro dum ŝargo de indeksoj.';
-                console.error(err);
-            });
-
-        function montriBildon(indekso) {
-            if (indekso < 0 || indekso >= indeksoj.length) return;
-            nunaIndekso = indekso;
-            const bildoUrl = bazoUrl + indeksoj[indekso].bildo;
-            document.getElementById('rezulto').innerHTML =
-                `<img src="${bildoUrl}" alt="Vortaro-paĝo">`;
-        }
-
-        function sercxi() {
-            const enigo = document.getElementById('sercxo').value.trim().toLowerCase();
-            if (!enigo) return;
-            let trovita = -1;
-            for (let i = indeksoj.length - 1; i >= 0; i--) {
-                if (enigo >= indeksoj[i].vorto.toLowerCase()) {
-                    trovita = i;
-                    break;
-                }
-            }
-            if (trovita >= 0) {
-                montriBildon(trovita);
-            } else {
-                document.getElementById('rezulto').innerHTML = 'Neniu kongruo trovita.';
-            }
-        }
-
-        function antauxa() {
-            if (nunaIndekso > 0) montriBildon(nunaIndekso - 1);
-        }
-
-        function sekva() {
-            if (nunaIndekso < indeksoj.length - 1) montriBildon(nunaIndekso + 1);
-        }
-    </script>
+    <script src="funkcioj.js"></script>
 </body>
 
 </html>

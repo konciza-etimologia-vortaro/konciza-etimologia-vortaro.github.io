@@ -1,2002 +1,502 @@
 [
-  {
-    "bildo": "bildo015.webp",
-    "vorto": "Arm"
-  },
-  {
-    "bildo": "bildo016.webp",
-    "vorto": "ADĤOZO"
-  },
-  {
-    "bildo": "bildo017.webp",
-    "vorto": "absinto"
-  },
-  {
-    "bildo": "bildo018.webp",
-    "vorto": "~ado"
-  },
-  {
-    "bildo": "bildo019.webp",
-    "vorto": "admiralitato"
-  },
-  {
-    "bildo": "bildo020.webp",
-    "vorto": "aedo"
-  },
-  {
-    "bildo": "bildo021.webp",
-    "vorto": "afina"
-  },
-  {
-    "bildo": "bildo022.webp",
-    "vorto": "agiti2"
-  },
-  {
-    "bildo": "bildo023.webp",
-    "vorto": "aŭ"
-  },
-  {
-    "bildo": "bildo024.webp",
-    "vorto": "aĵuro"
-  },
-  {
-    "bildo": "bildo025.webp",
-    "vorto": "aklimatizi"
-  },
-  {
-    "bildo": "bildo026.webp",
-    "vorto": "akromegalio"
-  },
-  {
-    "bildo": "bildo027.webp",
-    "vorto": "akurata"
-  },
-  {
-    "bildo": "bildo028.webp",
-    "vorto": "alaterno"
-  },
-  {
-    "bildo": "bildo029.webp",
-    "vorto": "aleo"
-  },
-  {
-    "bildo": "bildo030.webp",
-    "vorto": "algida"
-  },
-  {
-    "bildo": "bildo031.webp",
-    "vorto": "alkazabo"
-  },
-  {
-    "bildo": "bildo032.webp",
-    "vorto": "alopekuro"
-  },
-  {
-    "bildo": "bildo033.webp",
-    "vorto": "alveolo"
-  },
-  {
-    "bildo": "bildo034.webp",
-    "vorto": "ambulanco"
-  },
-  {
-    "bildo": "bildo035.webp",
-    "vorto": "Amharo"
-  },
-  {
-    "bildo": "bildo036.webp",
-    "vorto": "ampero"
-  },
-  {
-    "bildo": "bildo037.webp",
-    "vorto": "anakruzo"
-  },
-  {
-    "bildo": "bildo038.webp",
-    "vorto": "anĉovo"
-  },
-  {
-    "bildo": "bildo039.webp",
-    "vorto": "angio"
-  },
-  {
-    "bildo": "bildo040.webp",
-    "vorto": "anjono"
-  },
-  {
-    "bildo": "bildo041.webp",
-    "vorto": "~antF"
-  },
-  {
-    "bildo": "bildo042.webp",
-    "vorto": "antilokaproĉ"
-  },
-  {
-    "bildo": "bildo043.webp",
-    "vorto": "antropomorfismo"
-  },
-  {
-    "bildo": "bildo044.webp",
-    "vorto": "apetenco"
-  },
-  {
-    "bildo": "bildo045.webp",
-    "vorto": "apostolo"
-  },
-  {
-    "bildo": "bildo046.webp",
-    "vorto": "arakido"
-  },
-  {
-    "bildo": "bildo047.webp",
-    "vorto": "arkaika"
-  },
-  {
-    "bildo": "bildo048.webp",
-    "vorto": "argano"
-  },
-  {
-    "bildo": "bildo049.webp",
-    "vorto": "armadelo"
-  },
-  {
-    "bildo": "bildo050.webp",
-    "vorto": "artikoF"
-  },
-  {
-    "bildo": "bildo051.webp",
-    "vorto": "asdiko"
-  },
-  {
-    "bildo": "bildo052.webp",
-    "vorto": "aspartato"
-  },
-  {
-    "bildo": "bildo053.webp",
-    "vorto": "astrologo!"
-  },
-  {
-    "bildo": "bildo054.webp",
-    "vorto": "atiko"
-  },
-  {
-    "bildo": "bildo055.webp",
-    "vorto": "aŭbado"
-  },
-  {
-    "bildo": "bildo056.webp",
-    "vorto": "aŭrikulario"
-  },
-  {
-    "bildo": "bildo057.webp",
-    "vorto": "aŭtomobilo"
-  },
-  {
-    "bildo": "bildo058.webp",
-    "vorto": "aviĉo"
-  },
-  {
-    "bildo": "bildo059.webp",
-    "vorto": "babao"
-  },
-  {
-    "bildo": "bildo060.webp",
-    "vorto": "bajoneto"
-  },
-  {
-    "bildo": "bildo061.webp",
-    "vorto": "balbuti"
-  },
-  {
-    "bildo": "bildo062.webp",
-    "vorto": "bano"
-  },
-  {
-    "bildo": "bildo063.webp",
-    "vorto": "baro"
-  },
-  {
-    "bildo": "bildo064.webp",
-    "vorto": "barjo"
-  },
-  {
-    "bildo": "bildo065.webp",
-    "vorto": "baŝibozuko"
-  },
-  {
-    "bildo": "bildo066.webp",
-    "vorto": "bazalto?"
-  },
-  {
-    "bildo": "bildo067.webp",
-    "vorto": "bekeŝo"
-  },
-  {
-    "bildo": "bildo068.webp",
-    "vorto": "benzedrino"
-  },
-  {
-    "bildo": "bildo069.webp",
-    "vorto": "betulo“"
-  },
-  {
-    "bildo": "bildo070.webp",
-    "vorto": "buŝego»"
-  },
-  {
-    "bildo": "bildo071.webp",
-    "vorto": "biogenezo"
-  },
-  {
-    "bildo": "bildo072.webp",
-    "vorto": "bivalvoj"
-  },
-  {
-    "bildo": "bildo073.webp",
-    "vorto": "blenoreo"
-  },
-  {
-    "bildo": "bildo074.webp",
-    "vorto": "bobolinko"
-  },
-  {
-    "bildo": "bildo075.webp",
-    "vorto": "bolŝeviko"
-  },
-  {
-    "bildo": "bildo076.webp",
-    "vorto": "borborigmo"
-  },
-  {
-    "bildo": "bildo077.webp",
-    "vorto": "botrito"
-  },
-  {
-    "bildo": "bildo078.webp",
-    "vorto": "brakiurojEĉ"
-  },
-  {
-    "bildo": "bildo079.webp",
-    "vorto": "Bretono"
-  },
-  {
-    "bildo": "bildo080.webp",
-    "vorto": "bromelio"
-  },
-  {
-    "bildo": "bildo081.webp",
-    "vorto": "breast"
-  },
-  {
-    "bildo": "bildo082.webp",
-    "vorto": "buĝeto"
-  },
-  {
-    "bildo": "bildo083.webp",
-    "vorto": "bumo"
-  },
-  {
-    "bildo": "bildo084.webp",
-    "vorto": "busolo"
-  },
-  {
-    "bildo": "bildo085.webp",
-    "vorto": "CF"
-  },
-  {
-    "bildo": "bildo086.webp",
-    "vorto": "ciĉco"
-  },
-  {
-    "bildo": "bildo087.webp",
-    "vorto": "centezimo"
-  },
-  {
-    "bildo": "bildo088.webp",
-    "vorto": "cercidifilo"
-  },
-  {
-    "bildo": "bildo089.webp",
-    "vorto": "cetacoj"
-  },
-  {
-    "bildo": "bildo090.webp",
-    "vorto": "cigaroF"
-  },
-  {
-    "bildo": "bildo091.webp",
-    "vorto": "cimbalario"
-  },
-  {
-    "bildo": "bildo092.webp",
-    "vorto": "cirila"
-  },
-  {
-    "bildo": "bildo093.webp",
-    "vorto": "citadelo"
-  },
-  {
-    "bildo": "bildo094.webp",
-    "vorto": "E"
-  },
-  {
-    "bildo": "bildo095.webp",
-    "vorto": "Ĉ"
-  },
-  {
-    "bildo": "bildo096.webp",
-    "vorto": "ĉapoF"
-  },
-  {
-    "bildo": "bildo097.webp",
-    "vorto": "Ĉeĥo"
-  },
-  {
-    "bildo": "bildo098.webp",
-    "vorto": "ĉevaloF"
-  },
-  {
-    "bildo": "bildo099.webp",
-    "vorto": "ĉistero"
-  },
-  {
-    "bildo": "bildo100.webp",
-    "vorto": "A"
-  },
-  {
-    "bildo": "bildo101.webp",
-    "vorto": "dir"
-  },
-  {
-    "bildo": "bildo102.webp",
-    "vorto": "dalet"
-  },
-  {
-    "bildo": "bildo103.webp",
-    "vorto": "dasimetro"
-  },
-  {
-    "bildo": "bildo104.webp",
-    "vorto": "deĉifri"
-  },
-  {
-    "bildo": "bildo105.webp",
-    "vorto": "Dekalogo"
-  },
-  {
-    "bildo": "bildo106.webp",
-    "vorto": "delico"
-  },
-  {
-    "bildo": "bildo107.webp",
-    "vorto": "dendrologooj"
-  },
-  {
-    "bildo": "bildo108.webp",
-    "vorto": "derviŝo"
-  },
-  {
-    "bildo": "bildo109.webp",
-    "vorto": "deŭterono"
-  },
-  {
-    "bildo": "bildo110.webp",
-    "vorto": "diagramo"
-  },
-  {
-    "bildo": "bildo111.webp",
-    "vorto": "dicentro"
-  },
-  {
-    "bildo": "bildo112.webp",
-    "vorto": "digno»"
-  },
-  {
-    "bildo": "bildo113.webp",
-    "vorto": "diminutivo"
-  },
-  {
-    "bildo": "bildo114.webp",
-    "vorto": "diplokoko"
-  },
-  {
-    "bildo": "bildo115.webp",
-    "vorto": "disenterio"
-  },
-  {
-    "bildo": "bildo116.webp",
-    "vorto": "dispozicio"
-  },
-  {
-    "bildo": "bildo117.webp",
-    "vorto": "divizoro"
-  },
-  {
-    "bildo": "bildo118.webp",
-    "vorto": "dolio"
-  },
-  {
-    "bildo": "bildo119.webp",
-    "vorto": "dosiero"
-  },
-  {
-    "bildo": "bildo120.webp",
-    "vorto": "driado"
-  },
-  {
-    "bildo": "bildo121.webp",
-    "vorto": "dubelo"
-  },
-  {
-    "bildo": "bildo122.webp",
-    "vorto": "duramatro"
-  },
-  {
-    "bildo": "bildo123.webp",
-    "vorto": "EF"
-  },
-  {
-    "bildo": "bildo124.webp",
-    "vorto": "edifi"
-  },
-  {
-    "bildo": "bildo125.webp",
-    "vorto": "eglanterio"
-  },
-  {
-    "bildo": "bildo126.webp",
-    "vorto": "eklektika"
-  },
-  {
-    "bildo": "bildo127.webp",
-    "vorto": "ekspektori"
-  },
-  {
-    "bildo": "bildo128.webp",
-    "vorto": "ektodermo"
-  },
-  {
-    "bildo": "bildo129.webp",
-    "vorto": "ekzemplero"
-  },
-  {
-    "bildo": "bildo130.webp",
-    "vorto": "elaterio"
-  },
-  {
-    "bildo": "bildo131.webp",
-    "vorto": "Eliro"
-  },
-  {
-    "bildo": "bildo132.webp",
-    "vorto": "~emio"
-  },
-  {
-    "bildo": "bildo133.webp",
-    "vorto": "enantiozo"
-  },
-  {
-    "bildo": "bildo134.webp",
-    "vorto": "enigmo"
-  },
-  {
-    "bildo": "bildo135.webp",
-    "vorto": "entuziasmoF"
-  },
-  {
-    "bildo": "bildo136.webp",
-    "vorto": "epifenomeno"
-  },
-  {
-    "bildo": "bildo137.webp",
-    "vorto": "epitelio"
-  },
-  {
-    "bildo": "bildo138.webp",
-    "vorto": "ergografo"
-  },
-  {
-    "bildo": "bildo139.webp",
-    "vorto": "esameno"
-  },
-  {
-    "bildo": "bildo140.webp",
-    "vorto": "esplanado"
-  },
-  {
-    "bildo": "bildo141.webp",
-    "vorto": "eteno"
-  },
-  {
-    "bildo": "bildo142.webp",
-    "vorto": "eŭforbio"
-  },
-  {
-    "bildo": "bildo143.webp",
-    "vorto": "evipano"
-  },
-  {
-    "bildo": "bildo144.webp",
-    "vorto": "e"
-  },
-  {
-    "bildo": "bildo145.webp",
-    "vorto": "FF"
-  },
-  {
-    "bildo": "bildo146.webp",
-    "vorto": "fajro"
-  },
-  {
-    "bildo": "bildo147.webp",
-    "vorto": "falto"
-  },
-  {
-    "bildo": "bildo148.webp",
-    "vorto": "farandolo"
-  },
-  {
-    "bildo": "bildo149.webp",
-    "vorto": "faŭcio"
-  },
-  {
-    "bildo": "bildo150.webp",
-    "vorto": "feldspato"
-  },
-  {
-    "bildo": "bildo151.webp",
-    "vorto": "fenotipo"
-  },
-  {
-    "bildo": "bildo152.webp",
-    "vorto": "fir"
-  },
-  {
-    "bildo": "bildo153.webp",
-    "vorto": "filamento"
-  },
-  {
-    "bildo": "bildo154.webp",
-    "vorto": "filumo"
-  },
-  {
-    "bildo": "bildo155.webp",
-    "vorto": "fitoterapio"
-  },
-  {
-    "bildo": "bildo156.webp",
-    "vorto": "flaŭro"
-  },
-  {
-    "bildo": "bildo157.webp",
-    "vorto": "flukso"
-  },
-  {
-    "bildo": "bildo158.webp",
-    "vorto": "fonduso"
-  },
-  {
-    "bildo": "bildo159.webp",
-    "vorto": "furmia"
-  },
-  {
-    "bildo": "bildo160.webp",
-    "vorto": "fotografi"
-  },
-  {
-    "bildo": "bildo161.webp",
-    "vorto": "francilia"
-  },
-  {
-    "bildo": "bildo162.webp",
-    "vorto": "freŝa"
-  },
-  {
-    "bildo": "bildo163.webp",
-    "vorto": "frua"
-  },
-  {
-    "bildo": "bildo164.webp",
-    "vorto": "e"
-  },
-  {
-    "bildo": "bildo165.webp",
-    "vorto": "fumario"
-  },
-  {
-    "bildo": "bildo166.webp",
-    "vorto": "normalaj"
-  },
-  {
-    "bildo": "bildo167.webp",
-    "vorto": "gabaro"
-  },
-  {
-    "bildo": "bildo168.webp",
-    "vorto": "gajni"
-  },
-  {
-    "bildo": "bildo169.webp",
-    "vorto": "galinolo"
-  },
-  {
-    "bildo": "bildo170.webp",
-    "vorto": "gandarvo"
-  },
-  {
-    "bildo": "bildo171.webp",
-    "vorto": "gasterosteo"
-  },
-  {
-    "bildo": "bildo172.webp",
-    "vorto": "geko"
-  },
-  {
-    "bildo": "bildo173.webp",
-    "vorto": "geocentra"
-  },
-  {
-    "bildo": "bildo174.webp",
-    "vorto": "gestif"
-  },
-  {
-    "bildo": "bildo175.webp",
-    "vorto": "giNgaMO"
-  },
-  {
-    "bildo": "bildo176.webp",
-    "vorto": "glareolo"
-  },
-  {
-    "bildo": "bildo177.webp",
-    "vorto": "gliptoteko"
-  },
-  {
-    "bildo": "bildo178.webp",
-    "vorto": "gluti"
-  },
-  {
-    "bildo": "bildo179.webp",
-    "vorto": "gonfalonoEĉ"
-  },
-  {
-    "bildo": "bildo180.webp",
-    "vorto": "grajo"
-  },
-  {
-    "bildo": "bildo181.webp",
-    "vorto": "graviolo"
-  },
-  {
-    "bildo": "bildo182.webp",
-    "vorto": "grizajlo"
-  },
-  {
-    "bildo": "bildo183.webp",
-    "vorto": "gvati"
-  },
-  {
-    "bildo": "bildo184.webp",
-    "vorto": "gufoF"
-  },
-  {
-    "bildo": "bildo185.webp",
-    "vorto": "ĜI"
-  },
-  {
-    "bildo": "bildo186.webp",
-    "vorto": "ĝermo"
-  },
-  {
-    "bildo": "bildo187.webp",
-    "vorto": "hF"
-  },
-  {
-    "bildo": "bildo188.webp",
-    "vorto": "halebardo?"
-  },
-  {
-    "bildo": "bildo189.webp",
-    "vorto": "hamstro"
-  },
-  {
-    "bildo": "bildo190.webp",
-    "vorto": "harneso"
-  },
-  {
-    "bildo": "bildo191.webp",
-    "vorto": "hedero"
-  },
-  {
-    "bildo": "bildo192.webp",
-    "vorto": "helicoido"
-  },
-  {
-    "bildo": "bildo193.webp",
-    "vorto": "hematurio"
-  },
-  {
-    "bildo": "bildo194.webp",
-    "vorto": "heptozo"
-  },
-  {
-    "bildo": "bildo195.webp",
-    "vorto": "heterogena"
-  },
-  {
-    "bildo": "bildo196.webp",
-    "vorto": "hidrodinamiko"
-  },
-  {
-    "bildo": "bildo197.webp",
-    "vorto": "hieroglifo"
-  },
-  {
-    "bildo": "bildo198.webp",
-    "vorto": "hiosciamino"
-  },
-  {
-    "bildo": "bildo199.webp",
-    "vorto": "hipogrifo"
-  },
-  {
-    "bildo": "bildo200.webp",
-    "vorto": "HOG"
-  },
-  {
-    "bildo": "bildo201.webp",
-    "vorto": "hold"
-  },
-  {
-    "bildo": "bildo202.webp",
-    "vorto": "hontiF"
-  },
-  {
-    "bildo": "bildo203.webp",
-    "vorto": "Hotentoto"
-  },
-  {
-    "bildo": "bildo204.webp",
-    "vorto": "hurio"
-  },
-  {
-    "bildo": "bildo205.webp",
-    "vorto": "Ĥleno"
-  },
-  {
-    "bildo": "bildo206.webp",
-    "vorto": "ĤEF"
-  },
-  {
-    "bildo": "bildo207.webp",
-    "vorto": "i=F"
-  },
-  {
-    "bildo": "bildo208.webp",
-    "vorto": "idiopatio"
-  },
-  {
-    "bildo": "bildo209.webp",
-    "vorto": "ikozano"
-  },
-  {
-    "bildo": "bildo210.webp",
-    "vorto": "imagi"
-  },
-  {
-    "bildo": "bildo211.webp",
-    "vorto": "imprimaturo"
-  },
-  {
-    "bildo": "bildo212.webp",
-    "vorto": "indikativo"
-  },
-  {
-    "bildo": "bildo213.webp",
-    "vorto": "inflamo“"
-  },
-  {
-    "bildo": "bildo214.webp",
-    "vorto": "inkandeska"
-  },
-  {
-    "bildo": "bildo215.webp",
-    "vorto": "instigi"
-  },
-  {
-    "bildo": "bildo216.webp",
-    "vorto": "interferi"
-  },
-  {
-    "bildo": "bildo217.webp",
-    "vorto": "intuo"
-  },
-  {
-    "bildo": "bildo218.webp",
-    "vorto": "izatiso"
-  },
-  {
-    "bildo": "bildo219.webp",
-    "vorto": "L"
-  },
-  {
-    "bildo": "bildo220.webp",
-    "vorto": "iriso!"
-  },
-  {
-    "bildo": "bildo221.webp",
-    "vorto": "jaF"
-  },
-  {
-    "bildo": "bildo222.webp",
-    "vorto": "jambo"
-  },
-  {
-    "bildo": "bildo223.webp",
-    "vorto": "jodozo"
-  },
-  {
-    "bildo": "bildo224.webp",
-    "vorto": "jurisprudenco"
-  },
-  {
-    "bildo": "bildo225.webp",
-    "vorto": "TF"
-  },
-  {
-    "bildo": "bildo226.webp",
-    "vorto": "juglando"
-  },
-  {
-    "bildo": "bildo227.webp",
-    "vorto": "ĵokero"
-  },
-  {
-    "bildo": "bildo228.webp",
-    "vorto": "ĴF"
-  },
-  {
-    "bildo": "bildo229.webp",
-    "vorto": "KE"
-  },
-  {
-    "bildo": "bildo230.webp",
-    "vorto": "kadio"
-  },
-  {
-    "bildo": "bildo231.webp",
-    "vorto": "kakao"
-  },
-  {
-    "bildo": "bildo232.webp",
-    "vorto": "kalceolario"
-  },
-  {
-    "bildo": "bildo233.webp",
-    "vorto": "kaliklo"
-  },
-  {
-    "bildo": "bildo234.webp",
-    "vorto": "kalumeto"
-  },
-  {
-    "bildo": "bildo235.webp",
-    "vorto": "kamiĉio"
-  },
-  {
-    "bildo": "bildo236.webp",
-    "vorto": "kanceliero"
-  },
-  {
-    "bildo": "bildo237.webp",
-    "vorto": "kantarido"
-  },
-  {
-    "bildo": "bildo238.webp",
-    "vorto": "kapoko"
-  },
-  {
-    "bildo": "bildo239.webp",
-    "vorto": "karagano"
-  },
-  {
-    "bildo": "bildo240.webp",
-    "vorto": "karboleino"
-  },
-  {
-    "bildo": "bildo241.webp",
-    "vorto": "kareto"
-  },
-  {
-    "bildo": "bildo242.webp",
-    "vorto": "karolo"
-  },
-  {
-    "bildo": "bildo243.webp",
-    "vorto": "kaseto"
-  },
-  {
-    "bildo": "bildo244.webp",
-    "vorto": "katakano"
-  },
-  {
-    "bildo": "bildo245.webp",
-    "vorto": "katekizi"
-  },
-  {
-    "bildo": "bildo246.webp",
-    "vorto": "kaŭsalgio"
-  },
-  {
-    "bildo": "bildo247.webp",
-    "vorto": "kvezalo"
-  },
-  {
-    "bildo": "bildo248.webp",
-    "vorto": "keri0"
-  },
-  {
-    "bildo": "bildo249.webp",
-    "vorto": "kiki"
-  },
-  {
-    "bildo": "bildo250.webp",
-    "vorto": "kiraso"
-  },
-  {
-    "bildo": "bildo251.webp",
-    "vorto": "klami"
-  },
-  {
-    "bildo": "bildo252.webp",
-    "vorto": "klerikala"
-  },
-  {
-    "bildo": "bildo253.webp",
-    "vorto": "klorozo"
-  },
-  {
-    "bildo": "bildo254.webp",
-    "vorto": "kObOEDK"
-  },
-  {
-    "bildo": "bildo255.webp",
-    "vorto": "kohobi"
-  },
-  {
-    "bildo": "bildo256.webp",
-    "vorto": "kolao"
-  },
-  {
-    "bildo": "bildo257.webp",
-    "vorto": "kolimbo"
-  },
-  {
-    "bildo": "bildo258.webp",
-    "vorto": "kolumno"
-  },
-  {
-    "bildo": "bildo259.webp",
-    "vorto": "KominternooJ"
-  },
-  {
-    "bildo": "bildo260.webp",
-    "vorto": "kompliki"
-  },
-  {
-    "bildo": "bildo261.webp",
-    "vorto": "koncertino"
-  },
-  {
-    "bildo": "bildo262.webp",
-    "vorto": "konfekcio"
-  },
-  {
-    "bildo": "bildo263.webp",
-    "vorto": "konjako"
-  },
-  {
-    "bildo": "bildo264.webp",
-    "vorto": "konsistenco"
-  },
-  {
-    "bildo": "bildo265.webp",
-    "vorto": "kontesti"
-  },
-  {
-    "bildo": "bildo266.webp",
-    "vorto": "konvalarino"
-  },
-  {
-    "bildo": "bildo267.webp",
-    "vorto": "kopriso"
-  },
-  {
-    "bildo": "bildo268.webp",
-    "vorto": "korelacio"
-  },
-  {
-    "bildo": "bildo269.webp",
-    "vorto": "koronio"
-  },
-  {
-    "bildo": "bildo270.webp",
-    "vorto": "kosinuso"
-  },
-  {
-    "bildo": "bildo271.webp",
-    "vorto": "krabo"
-  },
-  {
-    "bildo": "bildo272.webp",
-    "vorto": "kreko"
-  },
-  {
-    "bildo": "bildo273.webp",
-    "vorto": "krimo"
-  },
-  {
-    "bildo": "bildo274.webp",
-    "vorto": "kriticismo"
-  },
-  {
-    "bildo": "bildo275.webp",
-    "vorto": "kromosfero"
-  },
-  {
-    "bildo": "bildo276.webp",
-    "vorto": "kruzado"
-  },
-  {
-    "bildo": "bildo277.webp",
-    "vorto": "kŝatrio"
-  },
-  {
-    "bildo": "bildo278.webp",
-    "vorto": "kultivaro"
-  },
-  {
-    "bildo": "bildo279.webp",
-    "vorto": "kuraĝa"
-  },
-  {
-    "bildo": "bildo280.webp",
-    "vorto": "kurzo"
-  },
-  {
-    "bildo": "bildo281.webp",
-    "vorto": "kvalito"
-  },
-  {
-    "bildo": "bildo282.webp",
-    "vorto": "kvesti"
-  },
-  {
-    "bildo": "bildo283.webp",
-    "vorto": "laF"
-  },
-  {
-    "bildo": "bildo284.webp",
-    "vorto": "lagenario"
-  },
-  {
-    "bildo": "bildo285.webp",
-    "vorto": "lambdo"
-  },
-  {
-    "bildo": "bildo286.webp",
-    "vorto": "landa"
-  },
-  {
-    "bildo": "bildo287.webp",
-    "vorto": "larmo"
-  },
-  {
-    "bildo": "bildo288.webp",
-    "vorto": "laŭbo"
-  },
-  {
-    "bildo": "bildo289.webp",
-    "vorto": "legi"
-  },
-  {
-    "bildo": "bildo290.webp",
-    "vorto": "lemuro"
-  },
-  {
-    "bildo": "bildo291.webp",
-    "vorto": "leptospiro"
-  },
-  {
-    "bildo": "bildo292.webp",
-    "vorto": "levistiko"
-  },
-  {
-    "bildo": "bildo293.webp",
-    "vorto": "ligaturo"
-  },
-  {
-    "bildo": "bildo294.webp",
-    "vorto": "limeto"
-  },
-  {
-    "bildo": "bildo295.webp",
-    "vorto": "lipazo"
-  },
-  {
-    "bildo": "bildo296.webp",
-    "vorto": "litoto"
-  },
-  {
-    "bildo": "bildo297.webp",
-    "vorto": "lofoforoEDK"
-  },
-  {
-    "bildo": "bildo298.webp",
-    "vorto": "lomo"
-  },
-  {
-    "bildo": "bildo299.webp",
-    "vorto": "Lubo"
-  },
-  {
-    "bildo": "bildo300.webp",
-    "vorto": "lunacio"
-  },
-  {
-    "bildo": "bildo301.webp",
-    "vorto": "MI"
-  },
-  {
-    "bildo": "bildo302.webp",
-    "vorto": "magistrato"
-  },
-  {
-    "bildo": "bildo303.webp",
-    "vorto": "maĥalat-leanotoXZ"
-  },
-  {
-    "bildo": "bildo304.webp",
-    "vorto": "makro-"
-  },
-  {
-    "bildo": "bildo305.webp",
-    "vorto": "malikismo"
-  },
-  {
-    "bildo": "bildo306.webp",
-    "vorto": "mandragoro"
-  },
-  {
-    "bildo": "bildo307.webp",
-    "vorto": "mansardo?"
-  },
-  {
-    "bildo": "bildo308.webp",
-    "vorto": "marĝeno"
-  },
-  {
-    "bildo": "bildo309.webp",
-    "vorto": "martelo"
-  },
-  {
-    "bildo": "bildo310.webp",
-    "vorto": "maŝinor"
-  },
-  {
-    "bildo": "bildo311.webp",
-    "vorto": "meandro"
-  },
-  {
-    "bildo": "bildo312.webp",
-    "vorto": "megalito"
-  },
-  {
-    "bildo": "bildo313.webp",
-    "vorto": "meliloto"
-  },
-  {
-    "bildo": "bildo314.webp",
-    "vorto": "menaĝerio"
-  },
-  {
-    "bildo": "bildo315.webp",
-    "vorto": "meretrico"
-  },
-  {
-    "bildo": "bildo316.webp",
-    "vorto": "meskalino"
-  },
-  {
-    "bildo": "bildo317.webp",
-    "vorto": "meteo"
-  },
-  {
-    "bildo": "bildo318.webp",
-    "vorto": "mezereo"
-  },
-  {
-    "bildo": "bildo319.webp",
-    "vorto": "migdalo"
-  },
-  {
-    "bildo": "bildo320.webp",
-    "vorto": "miksta"
-  },
-  {
-    "bildo": "bildo321.webp",
-    "vorto": "miniaturo"
-  },
-  {
-    "bildo": "bildo322.webp",
-    "vorto": "mirlitono"
-  },
-  {
-    "bildo": "bildo323.webp",
-    "vorto": "mjelo"
-  },
-  {
-    "bildo": "bildo324.webp",
-    "vorto": "molaro"
-  },
-  {
-    "bildo": "bildo325.webp",
-    "vorto": "monofizito"
-  },
-  {
-    "bildo": "bildo326.webp",
-    "vorto": "moralo'"
-  },
-  {
-    "bildo": "bildo327.webp",
-    "vorto": "morulo"
-  },
-  {
-    "bildo": "bildo328.webp",
-    "vorto": "muestro"
-  },
-  {
-    "bildo": "bildo329.webp",
-    "vorto": "mumio"
-  },
-  {
-    "bildo": "bildo330.webp",
-    "vorto": "muslino"
-  },
-  {
-    "bildo": "bildo331.webp",
-    "vorto": "NF"
-  },
-  {
-    "bildo": "bildo332.webp",
-    "vorto": "nandinoEĉ"
-  },
-  {
-    "bildo": "bildo333.webp",
-    "vorto": "noh"
-  },
-  {
-    "bildo": "bildo334.webp",
-    "vorto": "negativa?"
-  },
-  {
-    "bildo": "bildo335.webp",
-    "vorto": "neolitiko"
-  },
-  {
-    "bildo": "bildo336.webp",
-    "vorto": "neŭropteroj"
-  },
-  {
-    "bildo": "bildo337.webp",
-    "vorto": "niktita"
-  },
-  {
-    "bildo": "bildo338.webp",
-    "vorto": "nocio"
-  },
-  {
-    "bildo": "bildo339.webp",
-    "vorto": "noreno"
-  },
-  {
-    "bildo": "bildo340.webp",
-    "vorto": "e"
-  },
-  {
-    "bildo": "bildo341.webp",
-    "vorto": "A"
-  },
-  {
-    "bildo": "bildo342.webp",
-    "vorto": "nudar"
-  },
-  {
-    "bildo": "bildo343.webp",
-    "vorto": "OF"
-  },
-  {
-    "bildo": "bildo344.webp",
-    "vorto": "obscena"
-  },
-  {
-    "bildo": "bildo345.webp",
-    "vorto": "OVA"
-  },
-  {
-    "bildo": "bildo346.webp",
-    "vorto": "ojstro"
-  },
-  {
-    "bildo": "bildo347.webp",
-    "vorto": "oktanto"
-  },
-  {
-    "bildo": "bildo348.webp",
-    "vorto": "oligoklazo"
-  },
-  {
-    "bildo": "bildo349.webp",
-    "vorto": "onagracoj"
-  },
-  {
-    "bildo": "bildo350.webp",
-    "vorto": "operaco"
-  },
-  {
-    "bildo": "bildo351.webp",
-    "vorto": "oratorio"
-  },
-  {
-    "bildo": "bildo352.webp",
-    "vorto": "orientalismo"
-  },
-  {
-    "bildo": "bildo353.webp",
-    "vorto": "ortografio"
-  },
-  {
-    "bildo": "bildo354.webp",
-    "vorto": "Ostrogoto"
-  },
-  {
-    "bildo": "bildo355.webp",
-    "vorto": "PE"
-  },
-  {
-    "bildo": "bildo356.webp",
-    "vorto": "pajaco"
-  },
-  {
-    "bildo": "bildo357.webp",
-    "vorto": "paleografo?"
-  },
-  {
-    "bildo": "bildo358.webp",
-    "vorto": "pano"
-  },
-  {
-    "bildo": "bildo359.webp",
-    "vorto": "pantero"
-  },
-  {
-    "bildo": "bildo360.webp",
-    "vorto": "paradigmo"
-  },
-  {
-    "bildo": "bildo361.webp",
-    "vorto": "paraplegio"
-  },
-  {
-    "bildo": "bildo362.webp",
-    "vorto": "parkor"
-  },
-  {
-    "bildo": "bildo363.webp",
-    "vorto": "parvenuo"
-  },
-  {
-    "bildo": "bildo364.webp",
-    "vorto": "paŝti"
-  },
-  {
-    "bildo": "bildo365.webp",
-    "vorto": "patrimonio"
-  },
-  {
-    "bildo": "bildo366.webp",
-    "vorto": "potro"
-  },
-  {
-    "bildo": "bildo367.webp",
-    "vorto": "peletierino"
-  },
-  {
-    "bildo": "bildo368.webp",
-    "vorto": "pentano"
-  },
-  {
-    "bildo": "bildo369.webp",
-    "vorto": "perdriko"
-  },
-  {
-    "bildo": "bildo370.webp",
-    "vorto": "periplo"
-  },
-  {
-    "bildo": "bildo371.webp",
-    "vorto": "permitivo"
-  },
-  {
-    "bildo": "bildo372.webp",
-    "vorto": "pesimismo?"
-  },
-  {
-    "bildo": "bildo373.webp",
-    "vorto": "pia"
-  },
-  {
-    "bildo": "bildo374.webp",
-    "vorto": "pikadoro"
-  },
-  {
-    "bildo": "bildo375.webp",
-    "vorto": "pinoF"
-  },
-  {
-    "bildo": "bildo376.webp",
-    "vorto": "pip"
-  },
-  {
-    "bildo": "bildo377.webp",
-    "vorto": "piromagneta"
-  },
-  {
-    "bildo": "bildo378.webp",
-    "vorto": "placebo"
-  },
-  {
-    "bildo": "bildo379.webp",
-    "vorto": "plasi"
-  },
-  {
-    "bildo": "bildo380.webp",
-    "vorto": "plendi"
-  },
-  {
-    "bildo": "bildo381.webp",
-    "vorto": "pluskvamperfekto"
-  },
-  {
-    "bildo": "bildo382.webp",
-    "vorto": "poeto"
-  },
-  {
-    "bildo": "bildo383.webp",
-    "vorto": "poligloto2"
-  },
-  {
-    "bildo": "bildo384.webp",
-    "vorto": "polpo"
-  },
-  {
-    "bildo": "bildo385.webp",
-    "vorto": "populacio"
-  },
-  {
-    "bildo": "bildo386.webp",
-    "vorto": "postenor"
-  },
-  {
-    "bildo": "bildo387.webp",
-    "vorto": "praho"
-  },
-  {
-    "bildo": "bildo388.webp",
-    "vorto": "predikta"
-  },
-  {
-    "bildo": "bildo389.webp",
-    "vorto": "presti"
-  },
-  {
-    "bildo": "bildo390.webp",
-    "vorto": "primitiva"
-  },
-  {
-    "bildo": "bildo391.webp",
-    "vorto": "profanos"
-  },
-  {
-    "bildo": "bildo392.webp",
-    "vorto": "prolepso"
-  },
-  {
-    "bildo": "bildo393.webp",
-    "vorto": "propozicio"
-  },
-  {
-    "bildo": "bildo394.webp",
-    "vorto": "protesti"
-  },
-  {
-    "bildo": "bildo395.webp",
-    "vorto": "prozopopeo"
-  },
-  {
-    "bildo": "bildo396.webp",
-    "vorto": "PSIO"
-  },
-  {
-    "bildo": "bildo397.webp",
-    "vorto": "pudingo"
-  },
-  {
-    "bildo": "bildo398.webp",
-    "vorto": "puits"
-  },
-  {
-    "bildo": "bildo399.webp",
-    "vorto": "Siriaka"
-  },
-  {
-    "bildo": "bildo400.webp",
-    "vorto": "pumpi"
-  },
-  {
-    "bildo": "bildo401.webp",
-    "vorto": "rabi"
-  },
-  {
-    "bildo": "bildo402.webp",
-    "vorto": "radio"
-  },
-  {
-    "bildo": "bildo403.webp",
-    "vorto": "raguo"
-  },
-  {
-    "bildo": "bildo404.webp",
-    "vorto": "rano"
-  },
-  {
-    "bildo": "bildo405.webp",
-    "vorto": "raŭpo"
-  },
-  {
-    "bildo": "bildo406.webp",
-    "vorto": "recipiento"
-  },
-  {
-    "bildo": "bildo407.webp",
-    "vorto": "regaliF"
-  },
-  {
-    "bildo": "bildo408.webp",
-    "vorto": "rekteno?"
-  },
-  {
-    "bildo": "bildo409.webp",
-    "vorto": "rendre"
-  },
-  {
-    "bildo": "bildo410.webp",
-    "vorto": "resonanco"
-  },
-  {
-    "bildo": "bildo411.webp",
-    "vorto": "retrospektiva"
-  },
-  {
-    "bildo": "bildo412.webp",
-    "vorto": "ribeliF"
-  },
-  {
-    "bildo": "bildo413.webp",
-    "vorto": "rilativo"
-  },
-  {
-    "bildo": "bildo414.webp",
-    "vorto": "ritmenbluso"
-  },
-  {
-    "bildo": "bildo415.webp",
-    "vorto": "Rogacio"
-  },
-  {
-    "bildo": "bildo416.webp",
-    "vorto": "rosino"
-  },
-  {
-    "bildo": "bildo417.webp",
-    "vorto": "rungo"
-  },
-  {
-    "bildo": "bildo418.webp",
-    "vorto": "rubio"
-  },
-  {
-    "bildo": "bildo419.webp",
-    "vorto": "SF"
-  },
-  {
-    "bildo": "bildo420.webp",
-    "vorto": "safismo"
-  },
-  {
-    "bildo": "bildo421.webp",
-    "vorto": "sakuro"
-  },
-  {
-    "bildo": "bildo422.webp",
-    "vorto": "salubra"
-  },
-  {
-    "bildo": "bildo423.webp",
-    "vorto": "samurajo"
-  },
-  {
-    "bildo": "bildo424.webp",
-    "vorto": "saponario"
-  },
-  {
-    "bildo": "bildo425.webp",
-    "vorto": "sarsaparilo"
-  },
-  {
-    "bildo": "bildo426.webp",
-    "vorto": "savarto"
-  },
-  {
-    "bildo": "bildo427.webp",
-    "vorto": "sĉgala"
-  },
-  {
-    "bildo": "bildo428.webp",
-    "vorto": "selaginelo"
-  },
-  {
-    "bildo": "bildo429.webp",
-    "vorto": "sana"
-  },
-  {
-    "bildo": "bildo430.webp",
-    "vorto": "Septuagesimo"
-  },
-  {
-    "bildo": "bildo431.webp",
-    "vorto": "SEFtAO"
-  },
-  {
-    "bildo": "bildo432.webp",
-    "vorto": "sfacelo"
-  },
-  {
-    "bildo": "bildo433.webp",
-    "vorto": "SIQMA"
-  },
-  {
-    "bildo": "bildo434.webp",
-    "vorto": "silurio"
-  },
-  {
-    "bildo": "bildo435.webp",
-    "vorto": "sinarkio"
-  },
-  {
-    "bildo": "bildo436.webp",
-    "vorto": "sinosto"
-  },
-  {
-    "bildo": "bildo437.webp",
-    "vorto": "sitaro"
-  },
-  {
-    "bildo": "bildo438.webp",
-    "vorto": "skarabo"
-  },
-  {
-    "bildo": "bildo439.webp",
-    "vorto": "sklera"
-  },
-  {
-    "bildo": "bildo440.webp",
-    "vorto": "skreno"
-  },
-  {
-    "bildo": "bildo441.webp",
-    "vorto": "slipo"
-  },
-  {
-    "bildo": "bildo442.webp",
-    "vorto": "sofismo"
-  },
-  {
-    "bildo": "bildo443.webp",
-    "vorto": "soloo"
-  },
-  {
-    "bildo": "bildo444.webp",
-    "vorto": "sorbi"
-  },
-  {
-    "bildo": "bildo445.webp",
-    "vorto": "sparko"
-  },
-  {
-    "bildo": "bildo446.webp",
-    "vorto": "sperta"
-  },
-  {
-    "bildo": "bildo447.webp",
-    "vorto": "splendoro"
-  },
-  {
-    "bildo": "bildo448.webp",
-    "vorto": "stabo"
-  },
-  {
-    "bildo": "bildo449.webp",
-    "vorto": "standardoF"
-  },
-  {
-    "bildo": "bildo450.webp",
-    "vorto": "stegodontooJ"
-  },
-  {
-    "bildo": "bildo451.webp",
-    "vorto": "sterolo"
-  },
-  {
-    "bildo": "bildo452.webp",
-    "vorto": "stokso"
-  },
-  {
-    "bildo": "bildo453.webp",
-    "vorto": "strelecooJ"
-  },
-  {
-    "bildo": "bildo454.webp",
-    "vorto": "stuki"
-  },
-  {
-    "bildo": "bildo455.webp",
-    "vorto": "substrato"
-  },
-  {
-    "bildo": "bildo456.webp",
-    "vorto": "sukrozo"
-  },
-  {
-    "bildo": "bildo457.webp",
-    "vorto": "svarmi!"
-  },
-  {
-    "bildo": "bildo458.webp",
-    "vorto": "surf"
-  },
-  {
-    "bildo": "bildo459.webp",
-    "vorto": "ŜF"
-  },
-  {
-    "bildo": "bildo460.webp",
-    "vorto": "ŝaloF"
-  },
-  {
-    "bildo": "bildo461.webp",
-    "vorto": "ŝedo"
-  },
-  {
-    "bildo": "bildo462.webp",
-    "vorto": "ŝindo"
-  },
-  {
-    "bildo": "bildo463.webp",
-    "vorto": "ŝarba"
-  },
-  {
-    "bildo": "bildo464.webp",
-    "vorto": "ki"
-  },
-  {
-    "bildo": "bildo465.webp",
-    "vorto": "|"
-  },
-  {
-    "bildo": "bildo466.webp",
-    "vorto": "ŝtalo"
-  },
-  {
-    "bildo": "bildo467.webp",
-    "vorto": "TF"
-  },
-  {
-    "bildo": "bildo468.webp",
-    "vorto": "TUPRV"
-  },
-  {
-    "bildo": "bildo469.webp",
-    "vorto": "talanto"
-  },
-  {
-    "bildo": "bildo470.webp",
-    "vorto": "tamen"
-  },
-  {
-    "bildo": "bildo471.webp",
-    "vorto": "tarantelo?"
-  },
-  {
-    "bildo": "bildo472.webp",
-    "vorto": "Taŭtekingo"
-  },
-  {
-    "bildo": "bildo473.webp",
-    "vorto": "TeEXVN"
-  },
-  {
-    "bildo": "bildo474.webp",
-    "vorto": "tembro"
-  },
-  {
-    "bildo": "bildo475.webp",
-    "vorto": "tenti"
-  },
-  {
-    "bildo": "bildo476.webp",
-    "vorto": "terciara"
-  },
-  {
-    "bildo": "bildo477.webp",
-    "vorto": "terpeno"
-  },
-  {
-    "bildo": "bildo478.webp",
-    "vorto": "tetrastila"
-  },
-  {
-    "bildo": "bildo479.webp",
-    "vorto": "timbalo"
-  },
-  {
-    "bildo": "bildo480.webp",
-    "vorto": "tiranosaŭro"
-  },
-  {
-    "bildo": "bildo481.webp",
-    "vorto": "tokelo"
-  },
-  {
-    "bildo": "bildo482.webp",
-    "vorto": "tonuso"
-  },
-  {
-    "bildo": "bildo483.webp",
-    "vorto": "tortriko"
-  },
-  {
-    "bildo": "bildo484.webp",
-    "vorto": "tragopogo"
-  },
-  {
-    "bildo": "bildo485.webp",
-    "vorto": "transduktoro"
-  },
-  {
-    "bildo": "bildo486.webp",
-    "vorto": "trenĉo"
-  },
-  {
-    "bildo": "bildo487.webp",
-    "vorto": "triftongo"
-  },
-  {
-    "bildo": "bildo488.webp",
-    "vorto": "Tripitako"
-  },
-  {
-    "bildo": "bildo489.webp",
-    "vorto": "trokleo"
-  },
-  {
-    "bildo": "bildo490.webp",
-    "vorto": "troncar"
-  },
-  {
-    "bildo": "bildo491.webp",
-    "vorto": "tusilago"
-  },
-  {
-    "bildo": "bildo492.webp",
-    "vorto": "tunelo"
-  },
-  {
-    "bildo": "bildo493.webp",
-    "vorto": "UF"
-  },
-  {
-    "bildo": "bildo494.webp",
-    "vorto": "ulano?"
-  },
-  {
-    "bildo": "bildo495.webp",
-    "vorto": "umlaŭto"
-  },
-  {
-    "bildo": "bildo496.webp",
-    "vorto": "Upaniŝado"
-  },
-  {
-    "bildo": "bildo497.webp",
-    "vorto": "urlio"
-  },
-  {
-    "bildo": "bildo498.webp",
-    "vorto": "uvulo"
-  },
-  {
-    "bildo": "bildo499.webp",
-    "vorto": "VF"
-  },
-  {
-    "bildo": "bildo500.webp",
-    "vorto": "vakero"
-  },
-  {
-    "bildo": "bildo501.webp",
-    "vorto": "vaniloF"
-  },
-  {
-    "bildo": "bildo502.webp",
-    "vorto": "VassOos"
-  },
-  {
-    "bildo": "bildo503.webp",
-    "vorto": "vegetalos"
-  },
-  {
-    "bildo": "bildo504.webp",
-    "vorto": "veneno"
-  },
-  {
-    "bildo": "bildo505.webp",
-    "vorto": "vermiĉelo"
-  },
-  {
-    "bildo": "bildo506.webp",
-    "vorto": "verukor"
-  },
-  {
-    "bildo": "bildo507.webp",
-    "vorto": "viando"
-  },
-  {
-    "bildo": "bildo508.webp",
-    "vorto": "vilaĝo"
-  },
-  {
-    "bildo": "bildo509.webp",
-    "vorto": "virtoF"
-  },
-  {
-    "bildo": "bildo510.webp",
-    "vorto": "vivero"
-  },
-  {
-    "bildo": "bildo511.webp",
-    "vorto": "vostokooJ"
-  },
-  {
-    "bildo": "bildo512.webp",
-    "vorto": "volano"
-  },
-  {
-    "bildo": "bildo513.webp",
-    "vorto": "ZF"
-  },
-  {
-    "bildo": "bildo514.webp",
-    "vorto": "zemstvo"
-  }
+  "Arm",
+  "ADĤOZO",
+  "absinto",
+  "~ado",
+  "admiralitato",
+  "aedo",
+  "afina",
+  "agiti2",
+  "aŭ",
+  "aĵuro",
+  "aklimatizi",
+  "akromegalio",
+  "akurata",
+  "alaterno",
+  "aleo",
+  "algida",
+  "alkazabo",
+  "alopekuro",
+  "alveolo",
+  "ambulanco",
+  "Amharo",
+  "ampero",
+  "anakruzo",
+  "anĉovo",
+  "angio",
+  "anjono",
+  "~antF",
+  "antilokaproĉ",
+  "antropomorfismo",
+  "apetenco",
+  "apostolo",
+  "arakido",
+  "arkaika",
+  "argano",
+  "armadelo",
+  "artikoF",
+  "asdiko",
+  "aspartato",
+  "astrologo!",
+  "atiko",
+  "aŭbado",
+  "aŭrikulario",
+  "aŭtomobilo",
+  "aviĉo",
+  "babao",
+  "bajoneto",
+  "balbuti",
+  "bano",
+  "baro",
+  "barjo",
+  "baŝibozuko",
+  "bazalto?",
+  "bekeŝo",
+  "benzedrino",
+  "betulo“",
+  "buŝego»",
+  "biogenezo",
+  "bivalvoj",
+  "blenoreo",
+  "bobolinko",
+  "bolŝeviko",
+  "borborigmo",
+  "botrito",
+  "brakiurojEĉ",
+  "Bretono",
+  "bromelio",
+  "breast",
+  "buĝeto",
+  "bumo",
+  "busolo",
+  "CF",
+  "ciĉco",
+  "centezimo",
+  "cercidifilo",
+  "cetacoj",
+  "cigaroF",
+  "cimbalario",
+  "cirila",
+  "citadelo",
+  "E",
+  "Ĉ",
+  "ĉapoF",
+  "Ĉeĥo",
+  "ĉevaloF",
+  "ĉistero",
+  "A",
+  "dir",
+  "dalet",
+  "dasimetro",
+  "deĉifri",
+  "Dekalogo",
+  "delico",
+  "dendrologooj",
+  "derviŝo",
+  "deŭterono",
+  "diagramo",
+  "dicentro",
+  "digno»",
+  "diminutivo",
+  "diplokoko",
+  "disenterio",
+  "dispozicio",
+  "divizoro",
+  "dolio",
+  "dosiero",
+  "driado",
+  "dubelo",
+  "duramatro",
+  "EF",
+  "edifi",
+  "eglanterio",
+  "eklektika",
+  "ekspektori",
+  "ektodermo",
+  "ekzemplero",
+  "elaterio",
+  "Eliro",
+  "~emio",
+  "enantiozo",
+  "enigmo",
+  "entuziasmoF",
+  "epifenomeno",
+  "epitelio",
+  "ergografo",
+  "esameno",
+  "esplanado",
+  "eteno",
+  "eŭforbio",
+  "evipano",
+  "e",
+  "FF",
+  "fajro",
+  "falto",
+  "farandolo",
+  "faŭcio",
+  "feldspato",
+  "fenotipo",
+  "fir",
+  "filamento",
+  "filumo",
+  "fitoterapio",
+  "flaŭro",
+  "flukso",
+  "fonduso",
+  "furmia",
+  "fotografi",
+  "francilia",
+  "freŝa",
+  "frua",
+  "e",
+  "fumario",
+  "normalaj",
+  "gabaro",
+  "gajni",
+  "galinolo",
+  "gandarvo",
+  "gasterosteo",
+  "geko",
+  "geocentra",
+  "gestif",
+  "giNgaMO",
+  "glareolo",
+  "gliptoteko",
+  "gluti",
+  "gonfalonoEĉ",
+  "grajo",
+  "graviolo",
+  "grizajlo",
+  "gvati",
+  "gufoF",
+  "ĜI",
+  "ĝermo",
+  "hF",
+  "halebardo?",
+  "hamstro",
+  "harneso",
+  "hedero",
+  "helicoido",
+  "hematurio",
+  "heptozo",
+  "heterogena",
+  "hidrodinamiko",
+  "hieroglifo",
+  "hiosciamino",
+  "hipogrifo",
+  "HOG",
+  "hold",
+  "hontiF",
+  "Hotentoto",
+  "hurio",
+  "Ĥleno",
+  "ĤEF",
+  "i=F",
+  "idiopatio",
+  "ikozano",
+  "imagi",
+  "imprimaturo",
+  "indikativo",
+  "inflamo“",
+  "inkandeska",
+  "instigi",
+  "interferi",
+  "intuo",
+  "izatiso",
+  "L",
+  "iriso!",
+  "jaF",
+  "jambo",
+  "jodozo",
+  "jurisprudenco",
+  "TF",
+  "juglando",
+  "ĵokero",
+  "ĴF",
+  "KE",
+  "kadio",
+  "kakao",
+  "kalceolario",
+  "kaliklo",
+  "kalumeto",
+  "kamiĉio",
+  "kanceliero",
+  "kantarido",
+  "kapoko",
+  "karagano",
+  "karboleino",
+  "kareto",
+  "karolo",
+  "kaseto",
+  "katakano",
+  "katekizi",
+  "kaŭsalgio",
+  "kvezalo",
+  "keri0",
+  "kiki",
+  "kiraso",
+  "klami",
+  "klerikala",
+  "klorozo",
+  "kObOEDK",
+  "kohobi",
+  "kolao",
+  "kolimbo",
+  "kolumno",
+  "KominternooJ",
+  "kompliki",
+  "koncertino",
+  "konfekcio",
+  "konjako",
+  "konsistenco",
+  "kontesti",
+  "konvalarino",
+  "kopriso",
+  "korelacio",
+  "koronio",
+  "kosinuso",
+  "krabo",
+  "kreko",
+  "krimo",
+  "kriticismo",
+  "kromosfero",
+  "kruzado",
+  "kŝatrio",
+  "kultivaro",
+  "kuraĝa",
+  "kurzo",
+  "kvalito",
+  "kvesti",
+  "laF",
+  "lagenario",
+  "lambdo",
+  "landa",
+  "larmo",
+  "laŭbo",
+  "legi",
+  "lemuro",
+  "leptospiro",
+  "levistiko",
+  "ligaturo",
+  "limeto",
+  "lipazo",
+  "litoto",
+  "lofoforoEDK",
+  "lomo",
+  "Lubo",
+  "lunacio",
+  "MI",
+  "magistrato",
+  "maĥalat-leanotoXZ",
+  "makro-",
+  "malikismo",
+  "mandragoro",
+  "mansardo?",
+  "marĝeno",
+  "martelo",
+  "maŝinor",
+  "meandro",
+  "megalito",
+  "meliloto",
+  "menaĝerio",
+  "meretrico",
+  "meskalino",
+  "meteo",
+  "mezereo",
+  "migdalo",
+  "miksta",
+  "miniaturo",
+  "mirlitono",
+  "mjelo",
+  "molaro",
+  "monofizito",
+  "moralo'",
+  "morulo",
+  "muestro",
+  "mumio",
+  "muslino",
+  "NF",
+  "nandinoEĉ",
+  "noh",
+  "negativa?",
+  "neolitiko",
+  "neŭropteroj",
+  "niktita",
+  "nocio",
+  "noreno",
+  "e",
+  "A",
+  "nudar",
+  "OF",
+  "obscena",
+  "OVA",
+  "ojstro",
+  "oktanto",
+  "oligoklazo",
+  "onagracoj",
+  "operaco",
+  "oratorio",
+  "orientalismo",
+  "ortografio",
+  "Ostrogoto",
+  "PE",
+  "pajaco",
+  "paleografo?",
+  "pano",
+  "pantero",
+  "paradigmo",
+  "paraplegio",
+  "parkor",
+  "parvenuo",
+  "paŝti",
+  "patrimonio",
+  "potro",
+  "peletierino",
+  "pentano",
+  "perdriko",
+  "periplo",
+  "permitivo",
+  "pesimismo?",
+  "pia",
+  "pikadoro",
+  "pinoF",
+  "pip",
+  "piromagneta",
+  "placebo",
+  "plasi",
+  "plendi",
+  "pluskvamperfekto",
+  "poeto",
+  "poligloto2",
+  "polpo",
+  "populacio",
+  "postenor",
+  "praho",
+  "predikta",
+  "presti",
+  "primitiva",
+  "profanos",
+  "prolepso",
+  "propozicio",
+  "protesti",
+  "prozopopeo",
+  "PSIO",
+  "pudingo",
+  "puits",
+  "Siriaka",
+  "pumpi",
+  "rabi",
+  "radio",
+  "raguo",
+  "rano",
+  "raŭpo",
+  "recipiento",
+  "regaliF",
+  "rekteno?",
+  "rendre",
+  "resonanco",
+  "retrospektiva",
+  "ribeliF",
+  "rilativo",
+  "ritmenbluso",
+  "Rogacio",
+  "rosino",
+  "rungo",
+  "rubio",
+  "SF",
+  "safismo",
+  "sakuro",
+  "salubra",
+  "samurajo",
+  "saponario",
+  "sarsaparilo",
+  "savarto",
+  "sĉgala",
+  "selaginelo",
+  "sana",
+  "Septuagesimo",
+  "SEFtAO",
+  "sfacelo",
+  "SIQMA",
+  "silurio",
+  "sinarkio",
+  "sinosto",
+  "sitaro",
+  "skarabo",
+  "sklera",
+  "skreno",
+  "slipo",
+  "sofismo",
+  "soloo",
+  "sorbi",
+  "sparko",
+  "sperta",
+  "splendoro",
+  "stabo",
+  "standardoF",
+  "stegodontooJ",
+  "sterolo",
+  "stokso",
+  "strelecooJ",
+  "stuki",
+  "substrato",
+  "sukrozo",
+  "svarmi!",
+  "surf",
+  "ŜF",
+  "ŝaloF",
+  "ŝedo",
+  "ŝindo",
+  "ŝarba",
+  "ki",
+  "|",
+  "ŝtalo",
+  "TF",
+  "TUPRV",
+  "talanto",
+  "tamen",
+  "tarantelo?",
+  "Taŭtekingo",
+  "TeEXVN",
+  "tembro",
+  "tenti",
+  "terciara",
+  "terpeno",
+  "tetrastila",
+  "timbalo",
+  "tiranosaŭro",
+  "tokelo",
+  "tonuso",
+  "tortriko",
+  "tragopogo",
+  "transduktoro",
+  "trenĉo",
+  "triftongo",
+  "Tripitako",
+  "trokleo",
+  "troncar",
+  "tusilago",
+  "tunelo",
+  "UF",
+  "ulano?",
+  "umlaŭto",
+  "Upaniŝado",
+  "urlio",
+  "uvulo",
+  "VF",
+  "vakero",
+  "vaniloF",
+  "VassOos",
+  "vegetalos",
+  "veneno",
+  "vermiĉelo",
+  "verukor",
+  "viando",
+  "vilaĝo",
+  "virtoF",
+  "vivero",
+  "vostokooJ",
+  "volano",
+  "ZF",
+  "zemstvo"
 ]
