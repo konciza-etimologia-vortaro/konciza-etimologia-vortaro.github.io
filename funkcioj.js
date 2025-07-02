@@ -136,16 +136,11 @@ function montriPagxonLauxNumero(teksto) {
     } else if (numero > 504) {
         numero = 504;
     }
-    montriBildon(numero + 13 - 1);
+    montriBildon(numero + 13);
 }
 
-function normaligiPorOrdo(vorto) {
-    let rezulto = "";
-    for (let i = 0; i < vorto.length; i++) {
-        const litero = vorto[i];
-        rezulto += esperantaKonverto[litero] || litero;
-    }
-    return rezulto;
+function normaligiPorOrdo(teksto) {
+    return teksto.split('').map(litero => esperantaKonverto[litero] || litero).join('');
 }
 
 function preniEnigon() {
@@ -177,18 +172,28 @@ function sercxi() {
 
 function sercxiVorton(teksto) {
     teksto = konvertiXsistemon(teksto).toLowerCase();
-    const tekstoNorm = normaligiPorOrdo(teksto);
+    teksto = normaligiPorOrdo(teksto);
+
+    let maldekstro = 13; // indekso de "a"
+    let dekstro = 514; // indekso de "zipo"
     let trovita = -1;
-    for (let i = listoDeVortoj.length - 1; i >= 0; i--) {
-        if (listoDeVortoj[i]) {
-            const nurVorto = listoDeVortoj[i].split("/")[0].toLowerCase();
-            const normoVorto = normaligiPorOrdo(nurVorto);
-            if (tekstoNorm >= normoVorto) {
-                trovita = i;
-                break;
-            }
+
+    while (maldekstro <= dekstro) {
+        let mezo = Math.floor((maldekstro + dekstro) / 2);
+        if (listoDeVortoj[mezo] == "") {
+            mezo += (mezo == maldekstro) ? +1 : -1;
+        }
+        let vorto = listoDeVortoj[mezo].split("/")[0].toLowerCase();
+        vorto = normaligiPorOrdo(vorto);
+
+        if (teksto >= vorto) {
+            trovita = mezo;
+            maldekstro = mezo + 1;
+        } else {
+            dekstro = mezo - 1;
         }
     }
+
     if (trovita >= 0) {
         montriBildon(trovita);
     } else {
