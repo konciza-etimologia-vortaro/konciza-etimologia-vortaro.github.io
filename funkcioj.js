@@ -186,7 +186,12 @@ function sercxiVorton(teksto) {
         let vorto = listoDeVortoj[mezo].split("/")[0].toLowerCase();
         vorto = normaligiPorOrdo(vorto);
 
-        if (teksto >= vorto) {
+        if (teksto == vorto) {
+            trovita = mezo;
+            break;
+        }
+
+        if (teksto > vorto) {
             trovita = mezo;
             maldekstro = mezo + 1;
         } else {
