@@ -1,6 +1,37 @@
 let listoDeVortoj = [];
 let nunaIndekso = -1;
 
+const esperantaKonverto = {
+    "a": "0",
+    "b": "1",
+    "c": "2",
+    "ĉ": "3",
+    "d": "4",
+    "e": "5",
+    "f": "6",
+    "g": "7",
+    "ĝ": "8",
+    "h": "9",
+    "ĥ": "a",
+    "i": "b",
+    "j": "c",
+    "ĵ": "d",
+    "k": "e",
+    "l": "f",
+    "m": "g",
+    "n": "h",
+    "o": "i",
+    "p": "j",
+    "r": "k",
+    "s": "l",
+    "ŝ": "m",
+    "t": "n",
+    "u": "o",
+    "ŭ": "p",
+    "v": "q",
+    "z": "r"
+};
+
 fetch('indeksoj.json')
     .then(respondo => respondo.json())
     .then(datumoj => {
@@ -15,7 +46,7 @@ fetch('indeksoj.json')
 document.getElementById('sercxo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         sercxi();
-        this.blur();
+        this.blur(); // movi la fokuson for
     }
 });
 
@@ -108,6 +139,15 @@ function montriPagxonLauxNumero(teksto) {
     montriBildon(numero + 13 - 1);
 }
 
+function normaligiPorOrdo(vorto) {
+    let rezulto = "";
+    for (let i = 0; i < vorto.length; i++) {
+        const litero = vorto[i];
+        rezulto += esperantaKonverto[litero] || litero;
+    }
+    return rezulto;
+}
+
 function preniEnigon() {
     return document.getElementById('sercxo').value.trim().toLowerCase();
 }
@@ -137,11 +177,13 @@ function sercxi() {
 
 function sercxiVorton(teksto) {
     teksto = konvertiXsistemon(teksto).toLowerCase();
+    const tekstoNorm = normaligiPorOrdo(teksto);
     let trovita = -1;
     for (let i = listoDeVortoj.length - 1; i >= 0; i--) {
         if (listoDeVortoj[i]) {
             const nurVorto = listoDeVortoj[i].split("/")[0].toLowerCase();
-            if (teksto >= nurVorto) {
+            const normoVorto = normaligiPorOrdo(nurVorto);
+            if (tekstoNorm >= normoVorto) {
                 trovita = i;
                 break;
             }
