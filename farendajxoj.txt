@@ -2,3 +2,4 @@ Montri KEV anstataŭ Konciza Etimologia Vortaro ĉe malgranda vido kiel poŝtele
 Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
 Plibonigi vidon per pli moderna enigo kaj butonoj.
 Prilabori vortojn ne en ĝusta alfabeta ordo, ekz. "farao" antaŭ "fari".
+Montri la unuan paĝon kiam lanĉas la aplikon.

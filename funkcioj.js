@@ -1,5 +1,5 @@
 let unuajKapvortoj = [];
-let nunaIndekso = -1;
+let nunaBildo = 1;
 let neOrdigitajKapvortoj = [];
 
 const esperantaKonverto = {
@@ -37,8 +37,11 @@ Promise.all([
     fetch('pagxaj-unuaj-kapvortoj.json').then(r => r.json()),
     fetch('ne-ordigitaj-kapvortoj.json').then(r => r.json())
 ])
-    .then(([unuaj, neordigitaj]) => {
-        unuajKapvortoj = unuaj;
+    .then(([unuajObjekto, neordigitaj]) => {
+        unuajKapvortoj = Object.entries(unuajObjekto).map(([kapvorto, bildo]) => ({
+            kapvorto,
+            bildo
+        }));
         neOrdigitajKapvortoj = neordigitaj;
         legiVortonElURL();
     })
@@ -47,11 +50,11 @@ Promise.all([
         console.error(eraro);
     });
 
-
 document.getElementById('sercxo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         sercxi();
-        this.blur(); // movi la fokuson for
+        // Movi la fokuson for post premado de Enter, kvazaŭ oni klakus ekstere
+        this.blur();
     }
 });
 
@@ -68,10 +71,10 @@ document.addEventListener('keydown', function (event) {
 });
 
 function antauxa() {
-    if (nunaIndekso <= 0) {
-        montriBildon(unuajKapvortoj.length - 1);
+    if (nunaBildo <= 1) {
+        montriBildon(518);
     } else {
-        montriBildon(nunaIndekso - 1);
+        montriBildon(nunaBildo - 1);
     }
 }
 
@@ -92,7 +95,6 @@ function estasNumero(teksto) {
 }
 
 function estasVorto(teksto) {
-    teksto = konvertiXsistemon(teksto);
     return /^[abcĉdefgĝhĥijĵklmnoprsŝtuŭvz]+$/.test(teksto);
 }
 
@@ -120,9 +122,9 @@ function legiVortonElURL() {
     }
 }
 
-function montriBildon(indekso) {
-    nunaIndekso = indekso;
-    const numero = (indekso + 1).toString().padStart(3, "0");
+function montriBildon(bildo) {
+    nunaBildo = bildo;
+    const numero = bildo.toString().padStart(3, "0");
     const bazoVojo = determiniBazanVojon();
     const bildoUrl = bazoVojo + `bildo${numero}.webp`;
     document.getElementById('rezulto').innerHTML =
@@ -134,13 +136,13 @@ function montriMesagxon(teksto) {
 }
 
 function montriPagxonLauxNumero(teksto) {
-    let numero = parseInt(teksto, 10);
-    if (numero < 1) {
-        numero = 1;
-    } else if (numero > 504) {
-        numero = 504;
+    let paĝo = parseInt(teksto, 10);
+    if (paĝo < 1) {
+        paĝo = 1;
+    } else if (paĝo > 504) {
+        paĝo = 504;
     }
-    montriBildon(numero + 13);
+    montriBildon(paĝo + 14);
 }
 
 function normaligiPorOrdo(teksto) {
@@ -152,10 +154,10 @@ function preniEnigon() {
 }
 
 function sekva() {
-    if (nunaIndekso >= unuajKapvortoj.length - 1) {
-        montriBildon(0);
+    if (nunaBildo >= 518) {
+        montriBildon(1);
     } else {
-        montriBildon(nunaIndekso + 1);
+        montriBildon(nunaBildo + 1);
     }
 }
 
@@ -167,44 +169,40 @@ function sercxi() {
 
     if (estasNumero(teksto)) {
         montriPagxonLauxNumero(teksto);
-    } else if (estasVorto(teksto)) {
-        teksto = konvertiXsistemon(teksto).toLowerCase();
-        if (neOrdigitajKapvortoj[teksto]) {
-            sercxiEnNeOrdigitajKapvortoj(teksto);
-        } else {
-            serĉiEnUnuajKapvortoj(teksto)
-        }
-    } else {
+        return;
+    }
+
+    teksto = konvertiXsistemon(teksto).toLowerCase();
+    if (!estasVorto(teksto)) {
         montriMesagxon('Bonvolu tajpi validan vorton kun nur esperantaj literoj (inkluzive ĉ aŭ cx, ktp) aŭ paĝnumeron.');
+        return;
+    }
+
+    if (neOrdigitajKapvortoj[teksto]) {
+        sercxiEnNeOrdigitajKapvortoj(teksto);
+    } else {
+        serĉiEnUnuajKapvortoj(teksto)
     }
 }
 
 function sercxiEnNeOrdigitajKapvortoj(teksto) {
-    const bildoNumero = neOrdigitajKapvortoj[teksto];
-    montriBildon(bildoNumero - 1);
+    const bildo = neOrdigitajKapvortoj[teksto];
+    montriBildon(bildo);
 }
 
 function serĉiEnUnuajKapvortoj(teksto) {
     teksto = normaligiPorOrdo(teksto);
 
-    let maldekstro = 13; // indekso de "a"
-    let dekstro = 514; // indekso de "zipo"
+    let maldekstro = 0;
+    let dekstro = unuajKapvortoj.length - 1;
     let trovita = -1;
 
     while (maldekstro <= dekstro) {
         let mezo = Math.floor((maldekstro + dekstro) / 2);
-        if (unuajKapvortoj[mezo] == "") {
-            mezo += (mezo == dekstro) ? -1 : +1;
-        }
-        let vorto = unuajKapvortoj[mezo].split("/")[0].toLowerCase();
-        vorto = normaligiPorOrdo(vorto);
+        let kapvorto = unuajKapvortoj[mezo].kapvorto.split("/")[0].toLowerCase();
+        kapvorto = normaligiPorOrdo(kapvorto);
 
-        if (teksto == vorto) {
-            trovita = mezo;
-            break;
-        }
-
-        if (teksto > vorto) {
+        if (teksto >= kapvorto) {
             trovita = mezo;
             maldekstro = mezo + 1;
         } else {
@@ -213,8 +211,9 @@ function serĉiEnUnuajKapvortoj(teksto) {
     }
 
     if (trovita >= 0) {
-        montriBildon(trovita);
+        montriBildon(unuajKapvortoj[trovita].bildo);
     } else {
         montriMesagxon('Neniu kongruo trovita.');
     }
 }
+
