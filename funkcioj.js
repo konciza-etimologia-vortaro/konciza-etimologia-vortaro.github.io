@@ -1,5 +1,6 @@
-let listoDeVortoj = [];
+let unuajKapvortoj = [];
 let nunaIndekso = -1;
+let neOrdigitajKapvortoj = [];
 
 const esperantaKonverto = {
     "a": "0",
@@ -32,16 +33,20 @@ const esperantaKonverto = {
     "z": "r"
 };
 
-fetch('indeksoj.json')
-    .then(respondo => respondo.json())
-    .then(datumoj => {
-        listoDeVortoj = datumoj;
+Promise.all([
+    fetch('pagxaj-unuaj-kapvortoj.json').then(r => r.json()),
+    fetch('ne-ordigitaj-kapvortoj.json').then(r => r.json())
+])
+    .then(([unuaj, neordigitaj]) => {
+        unuajKapvortoj = unuaj;
+        neOrdigitajKapvortoj = neordigitaj;
         legiVortonElURL();
     })
     .catch(eraro => {
-        document.getElementById('rezulto').innerText = 'Eraro dum ŝargo de la indeksoj.';
+        document.getElementById('rezulto').innerText = 'Eraro dum ŝargo de la datumoj.';
         console.error(eraro);
     });
+
 
 document.getElementById('sercxo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -52,6 +57,7 @@ document.getElementById('sercxo').addEventListener('keydown', function (event) {
 
 document.addEventListener('keydown', function (event) {
     if (document.activeElement.tagName === 'INPUT') {
+        // Neniu paĝoŝanĝo dum la uzanto tajpas en la serĉokampo
         return;
     }
     if (event.key === 'ArrowRight') {
@@ -63,7 +69,7 @@ document.addEventListener('keydown', function (event) {
 
 function antauxa() {
     if (nunaIndekso <= 0) {
-        montriBildon(listoDeVortoj.length - 1);
+        montriBildon(unuajKapvortoj.length - 1);
     } else {
         montriBildon(nunaIndekso - 1);
     }
@@ -90,8 +96,8 @@ function estasVorto(teksto) {
     return /^[abcĉdefgĝhĥijĵklmnoprsŝtuŭvz]+$/.test(teksto);
 }
 
-function ĝisdatigiURLon(enigo) {
-    const novaURL = window.location.pathname + '?s=' + encodeURIComponent(enigo);
+function ĝisdatigiURLon(teksto) {
+    const novaURL = window.location.pathname + '?s=' + encodeURIComponent(teksto);
     window.history.replaceState(null, '', novaURL);
 }
 
@@ -109,14 +115,12 @@ function legiVortonElURL() {
     const params = new URLSearchParams(window.location.search);
     const sParam = params.get('s');
     if (sParam) {
-        const enigoElem = document.getElementById('sercxo');
-        enigoElem.value = sParam;
+        document.getElementById('sercxo').value = sParam;;
         sercxi();
     }
 }
 
 function montriBildon(indekso) {
-    if (indekso < 0 || indekso >= listoDeVortoj.length) return;
     nunaIndekso = indekso;
     const numero = (indekso + 1).toString().padStart(3, "0");
     const bazoVojo = determiniBazanVojon();
@@ -148,7 +152,7 @@ function preniEnigon() {
 }
 
 function sekva() {
-    if (nunaIndekso >= listoDeVortoj.length - 1) {
+    if (nunaIndekso >= unuajKapvortoj.length - 1) {
         montriBildon(0);
     } else {
         montriBildon(nunaIndekso + 1);
@@ -156,22 +160,31 @@ function sekva() {
 }
 
 function sercxi() {
-    let enigo = preniEnigon();
-    if (!enigo) return;
+    let teksto = preniEnigon();
+    if (!teksto) return;
 
-    ĝisdatigiURLon(enigo);
+    ĝisdatigiURLon(teksto);
 
-    if (estasNumero(enigo)) {
-        montriPagxonLauxNumero(enigo);
-    } else if (estasVorto(enigo)) {
-        sercxiVorton(enigo);
+    if (estasNumero(teksto)) {
+        montriPagxonLauxNumero(teksto);
+    } else if (estasVorto(teksto)) {
+        teksto = konvertiXsistemon(teksto).toLowerCase();
+        if (neOrdigitajKapvortoj[teksto]) {
+            sercxiEnNeOrdigitajKapvortoj(teksto);
+        } else {
+            serĉiEnUnuajKapvortoj(teksto)
+        }
     } else {
         montriMesagxon('Bonvolu tajpi validan vorton kun nur esperantaj literoj (inkluzive ĉ aŭ cx, ktp) aŭ paĝnumeron.');
     }
 }
 
-function sercxiVorton(teksto) {
-    teksto = konvertiXsistemon(teksto).toLowerCase();
+function sercxiEnNeOrdigitajKapvortoj(teksto) {
+    const bildoNumero = neOrdigitajKapvortoj[teksto];
+    montriBildon(bildoNumero - 1);
+}
+
+function serĉiEnUnuajKapvortoj(teksto) {
     teksto = normaligiPorOrdo(teksto);
 
     let maldekstro = 13; // indekso de "a"
@@ -180,10 +193,10 @@ function sercxiVorton(teksto) {
 
     while (maldekstro <= dekstro) {
         let mezo = Math.floor((maldekstro + dekstro) / 2);
-        if (listoDeVortoj[mezo] == "") {
-            mezo += (mezo == maldekstro) ? +1 : -1;
+        if (unuajKapvortoj[mezo] == "") {
+            mezo += (mezo == dekstro) ? -1 : +1;
         }
-        let vorto = listoDeVortoj[mezo].split("/")[0].toLowerCase();
+        let vorto = unuajKapvortoj[mezo].split("/")[0].toLowerCase();
         vorto = normaligiPorOrdo(vorto);
 
         if (teksto == vorto) {
