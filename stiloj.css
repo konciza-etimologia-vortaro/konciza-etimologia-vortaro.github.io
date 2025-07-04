@@ -5,35 +5,57 @@ body {
     margin: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1em;
-    border: 1px solid #ccc;
-}
-
-.kontroloj {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5em;
-    margin-top: 1em;
-}
-
-input {
-    font-size: 1em;
-    padding: 0.5em;
-    flex: 1 1 150px;
-    min-width: 150px;
-    max-width: 300px;
-}
-
 button {
     font-size: 1em;
     padding: 0.5em;
     flex: 0 0 auto;
 }
 
+img {
+    border: 1px solid #ccc;
+    height: 85vh;
+    margin-top: 1em;
+    width: auto;
+}
+
+input {
+    flex: 1 1 150px;
+    font-size: 1em;
+    max-width: 300px;
+    min-width: 50px;
+    padding: 0.5em;
+}
+
 #rezulto {
     margin-top: 1em;
+}
+
+
+.kontroloj {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.mallonga {
+    display: none;
+}
+
+.plena {
+    display: block;
+}
+
+@media (max-width: 500px) {
+    .plena {
+        display: none;
+    }
+
+    .mallonga {
+        display: inline;
+        font-size: 2em;
+        font-weight: bold;
+    }
 }
