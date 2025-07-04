@@ -67,8 +67,12 @@ document.addEventListener('keydown', function (event) {
         sekva();
     } else if (event.key === 'ArrowLeft') {
         antauxa();
+    } else if (event.key === 'F2') {
+        event.preventDefault();
+        document.getElementById('sercxo').focus();
     }
 });
+
 
 function antauxa() {
     if (nunaBildo <= 1) {
