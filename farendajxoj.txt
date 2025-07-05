@@ -6,7 +6,7 @@ Montri la unuan paĝon kiam lanĉas la aplikon.
 
 Aldoni instrukciojn pri ne-ordigitaj-kapvortoj.json:
 - Vortoj devas esti minusklaj.
-- ktp.
+- Ne ŝanĝi la ordon por pli simpla prizorgado.
 
 Aldoni instrukciojn pri pagxaj-unuaj-kapvortoj.json:
 - ktp.
