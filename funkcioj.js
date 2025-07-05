@@ -1,6 +1,6 @@
-let unuajKapvortoj = [];
-let nunaBildo = 1;
 let neOrdigitajKapvortoj = [];
+let nunaBildo = 1;
+let unuajKapvortoj = [];
 
 const esperantaKonverto = {
     "a": "0",
@@ -37,8 +37,8 @@ Promise.all([
     fetch('pagxaj-unuaj-kapvortoj.json').then(r => r.json()),
     fetch('ne-ordigitaj-kapvortoj.json').then(r => r.json())
 ])
-    .then(([unuajObjekto, neordigitaj]) => {
-        unuajKapvortoj = Object.entries(unuajObjekto).map(([kapvorto, bildo]) => ({
+    .then(([kapvortoj, neordigitaj]) => {
+        unuajKapvortoj = Object.entries(kapvortoj).map(([kapvorto, bildo]) => ({
             kapvorto,
             bildo
         }));
@@ -103,8 +103,8 @@ function estasVorto(teksto) {
 }
 
 function ĝisdatigiURLon(teksto) {
-    const novaURL = window.location.pathname + '?s=' + encodeURIComponent(teksto);
-    window.history.replaceState(null, '', novaURL);
+    const url = window.location.pathname + '#' + encodeURIComponent(teksto);
+    window.history.replaceState(null, '', url);
 }
 
 function konvertiXsistemon(teksto) {
@@ -118,10 +118,9 @@ function konvertiXsistemon(teksto) {
 }
 
 function legiVortonElURL() {
-    const params = new URLSearchParams(window.location.search);
-    const sParam = params.get('s');
-    if (sParam) {
-        document.getElementById('sercxo').value = sParam;;
+    const hash = window.location.hash.slice(1).trim();
+    if (hash) {
+        document.getElementById('sercxo').value = decodeURIComponent(hash);
         sercxi();
     }
 }
@@ -130,9 +129,9 @@ function montriBildon(bildo) {
     nunaBildo = bildo;
     const numero = bildo.toString().padStart(3, "0");
     const bazoVojo = determiniBazanVojon();
-    const bildoUrl = bazoVojo + `bildo${numero}.webp`;
+    const url = bazoVojo + `bildo${numero}.webp`;
     document.getElementById('rezulto').innerHTML =
-        `<img src="${bildoUrl}" alt="Paĝo de vortaro">`;
+        `<img src="${url}" alt="Paĝo de vortaro">`;
 }
 
 function montriMesagxon(teksto) {
