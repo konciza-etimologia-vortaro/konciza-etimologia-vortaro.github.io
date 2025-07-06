@@ -14,14 +14,28 @@
         <a href="#">Konciza Etimologia Vortaro</a>
     </h1>
     <div class="kontroloj">
-        <span class="mallonga" title="Konciza Etimologia Vortaro">
-            <a href="#">KEV</a>
-        </span>
+        <a href="#" class="mallonga" title="Konciza Etimologia Vortaro" onclick="location.reload(); return false;">
+            KEV
+        </a>
         <input type="text" id="sercxo" placeholder="Entajpu vorton aŭ paĝnumeron..." />
-        <button onclick="sercxi()">Ek</button>
-        <button onclick="antauxa()">◀</button>
-        <button onclick="sekva()">▶</button>
+
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" onclick="sercxi()" title="Serĉi">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
+        </svg>
+
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" onclick="antauxa()" title="Antaŭa">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" onclick="sekva()" title="Sekva">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
     </div>
+
     <div id="rezulto"></div>
 
     <script src="funkcioj.js"></script>
