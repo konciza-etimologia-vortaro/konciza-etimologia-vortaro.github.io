@@ -48,6 +48,17 @@ input {
     display: block;
 }
 
+.mallonga a,
+.plena a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mallonga a:hover,
+.plena a:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 500px) {
     .plena {
         display: none;

@@ -73,6 +73,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+window.addEventListener('hashchange', legiVortonElURL);
 
 function antauxa() {
     if (nunaBildo <= 1) {
@@ -118,12 +119,20 @@ function konvertiXsistemon(teksto) {
 }
 
 function legiVortonElURL() {
+    if (window.location.href.endsWith("#")) {
+        montriMesagxon("");
+        history.replaceState(null, '', window.location.pathname);
+        location.reload();
+    }
+
     const hash = window.location.hash.slice(1).trim();
     if (hash) {
         document.getElementById('sercxo').value = decodeURIComponent(hash);
         sercxi();
+    } else {
     }
 }
+
 
 function montriBildon(bildo) {
     nunaBildo = bildo;
