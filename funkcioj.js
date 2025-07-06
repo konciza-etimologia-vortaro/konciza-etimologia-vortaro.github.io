@@ -194,7 +194,7 @@ function sercxiEnNeOrdigitajKapvortoj(teksto) {
 }
 
 function serĉiEnUnuajKapvortoj(teksto) {
-    teksto = normaligiPorOrdo(teksto);
+    let normaligitaTeksto = normaligiPorOrdo(teksto);
 
     let maldekstro = 0;
     let dekstro = unuajKapvortoj.length - 1;
@@ -203,9 +203,9 @@ function serĉiEnUnuajKapvortoj(teksto) {
     while (maldekstro <= dekstro) {
         let mezo = Math.floor((maldekstro + dekstro) / 2);
         let kapvorto = unuajKapvortoj[mezo].kapvorto.split("/")[0].toLowerCase();
-        kapvorto = normaligiPorOrdo(kapvorto);
+        let normaligitaKapvorto = normaligiPorOrdo(kapvorto);
 
-        if (teksto >= kapvorto) {
+        if (normaligitaTeksto >= normaligitaKapvorto) {
             trovita = mezo;
             maldekstro = mezo + 1;
         } else {
