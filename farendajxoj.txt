@@ -2,7 +2,6 @@ Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
 Plibonigi vidon per pli moderna enigo kaj butonoj.
 Montri la unuan paĝon kiam lanĉas la aplikon.
 Nombri vortserĉojn kaj uzantojn.
-Aldoni retpaĝan ikonon.
 
 Aldoni instrukciojn pri ne-ordigitaj-kapvortoj.json:
 - Vortoj devas esti minusklaj.
