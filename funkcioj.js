@@ -1,6 +1,8 @@
+let lastLitero = null;
 let neOrdigitajKapvortoj = [];
 let nunaBildo = 1;
 let unuajKapvortoj = [];
+let unuajKapvortojObj = [];
 
 const esperantaKonverto = {
     "a": "0",
@@ -33,12 +35,22 @@ const esperantaKonverto = {
     "z": "r"
 };
 
+const xsistemoMapo = {
+    'c': 'ĉ',
+    'g': 'ĝ',
+    'h': 'ĥ',
+    'j': 'ĵ',
+    's': 'ŝ',
+    'u': 'ŭ'
+};
+
 Promise.all([
     fetch('pagxaj-unuaj-kapvortoj.json').then(r => r.json()),
     fetch('ne-ordigitaj-kapvortoj.json').then(r => r.json())
 ])
     .then(([kapvortoj, neordigitaj]) => {
-        unuajKapvortoj = Object.entries(kapvortoj).map(([kapvorto, bildo]) => ({
+        unuajKapvortoj = kapvortoj;
+        unuajKapvortojObj = Object.entries(kapvortoj).map(([kapvorto, bildo]) => ({
             kapvorto,
             bildo
         }));
@@ -59,19 +71,64 @@ document.getElementById('sercxo').addEventListener('keydown', function (event) {
 });
 
 document.addEventListener('keydown', function (event) {
-    if (document.activeElement.tagName === 'INPUT') {
-        // Neniu paĝoŝanĝo dum la uzanto tajpas en la serĉokampo
-        return;
+    const sercxo = document.getElementById('sercxo');
+
+    if (document.activeElement !== sercxo) {
+        const litero = event.key.toLowerCase();
+
+        // Kontroli ĉu lasta litero + x estas speciala litero
+        if (lastLitero && litero === 'x') {
+            const kombinita = xsistemoMapo[lastLitero];
+            if (kombinita && unuajKapvortoj[kombinita]) {
+                montriBildon(unuajKapvortoj[kombinita]);
+                event.preventDefault();
+                lastLitero = null;
+                return;
+            }
+        }
+
+        // Normala traktado por unu litero
+        if (litero.length === 1 && unuajKapvortoj[litero]) {
+            montriBildon(unuajKapvortoj[litero]);
+            event.preventDefault();
+            lastLitero = litero; // Memoru
+            return;
+        }
+
+        // Se alia klavo, nuligi lastan literon
+        lastLitero = null;
     }
-    if (event.key === 'ArrowRight') {
-        sekva();
-    } else if (event.key === 'ArrowLeft') {
-        antauxa();
-    } else if (event.key === 'F2') {
-        event.preventDefault();
-        document.getElementById('sercxo').focus();
+
+    switch (event.key) {
+        case 'ArrowRight':
+            if (document.activeElement.tagName !== 'INPUT') sekva();
+            break;
+
+        case 'ArrowLeft':
+            if (document.activeElement.tagName !== 'INPUT') antauxa();
+            break;
+
+        case 'F2':
+            event.preventDefault();
+            if (document.activeElement === sercxo) {
+                sercxo.blur();
+            } else {
+                sercxo.focus();
+            }
+            break;
+
+        case 'End':
+            montriBildon(518);
+            event.preventDefault();
+            break;
+
+        case 'Home':
+            montriBildon(1);
+            event.preventDefault();
+            break;
     }
 });
+
 
 window.addEventListener('hashchange', legiVortonElURL);
 
@@ -109,13 +166,9 @@ function ĝisdatigiURLon(teksto) {
 }
 
 function konvertiXsistemon(teksto) {
-    return teksto
-        .replace(/cx/g, "ĉ")
-        .replace(/gx/g, "ĝ")
-        .replace(/hx/g, "ĥ")
-        .replace(/jx/g, "ĵ")
-        .replace(/sx/g, "ŝ")
-        .replace(/ux/g, "ŭ");
+    return teksto.replace(/([cghjsu])x/g, function (_, litero) {
+        return xsistemoMapo[litero] || litero + 'x';
+    });
 }
 
 function legiVortonElURL() {
@@ -129,7 +182,6 @@ function legiVortonElURL() {
     if (hash) {
         document.getElementById('sercxo').value = decodeURIComponent(hash);
         sercxi();
-    } else {
     }
 }
 
@@ -206,12 +258,12 @@ function serĉiEnUnuajKapvortoj(teksto) {
     let normaligitaTeksto = normaligiPorOrdo(teksto);
 
     let maldekstro = 0;
-    let dekstro = unuajKapvortoj.length - 1;
+    let dekstro = unuajKapvortojObj.length - 1;
     let trovita = -1;
 
     while (maldekstro <= dekstro) {
         let mezo = Math.floor((maldekstro + dekstro) / 2);
-        let kapvorto = unuajKapvortoj[mezo].kapvorto.split("/")[0].toLowerCase();
+        let kapvorto = unuajKapvortojObj[mezo].kapvorto.split("/")[0].toLowerCase();
         let normaligitaKapvorto = normaligiPorOrdo(kapvorto);
 
         if (normaligitaTeksto >= normaligitaKapvorto) {
@@ -223,7 +275,7 @@ function serĉiEnUnuajKapvortoj(teksto) {
     }
 
     if (trovita >= 0) {
-        montriBildon(unuajKapvortoj[trovita].bildo);
+        montriBildon(unuajKapvortojObj[trovita].bildo);
     } else {
         montriMesagxon('Neniu kongruo trovita.');
     }

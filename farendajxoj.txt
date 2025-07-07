@@ -2,6 +2,8 @@ Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
 Nombri vortserĉojn kaj uzantojn.
 Prilabori kapvortojn en pluralo.
 
+Informi pri la uzado de F2, sagaj klavoj, “a” por montri la bildon de “a,” “c” + “x” por montri la bildon de “ĉ” ktp.
+
 Aldoni instrukciojn pri ne-ordigitaj-kapvortoj.json:
 - Vortoj devas esti minusklaj.
 - Ne ŝanĝi la ordon por pli simpla prizorgado.
