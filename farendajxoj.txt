@@ -1,10 +1,12 @@
 Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
 Nombri vortserĉojn kaj uzantojn.
+Forigi kapvortojn en pluralo.
 
 Aldoni instrukciojn pri ne-ordigitaj-kapvortoj.json:
 - Vortoj devas esti minusklaj.
 - Ne ŝanĝi la ordon por pli simpla prizorgado.
 - Klarigi la prilaboron de vortoj ne en ĝusta alfabeta ordo.
+- Ne aldoni la duan kapvorton se ĝi jam ekzistas, ekz. "zeta aŭ dzeta" p. 500 kaj "dzeta aŭ zeta" p. 108.
 
 Aldoni instrukciojn pri pagxaj-unuaj-kapvortoj.json:
 - ktp.
