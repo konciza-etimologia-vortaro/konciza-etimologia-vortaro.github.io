@@ -195,12 +195,34 @@ function montriBildon(bildo) {
     const numero = bildo.toString().padStart(3, "0");
     const bazoVojo = determiniBazanVojon();
     const url = bazoVojo + `bildo${numero}.webp`;
-    document.getElementById('rezulto').innerHTML =
-        `<img src="${url}" alt="Paĝo de vortaro">`;
+    const rezulto = document.getElementById('rezulto');
+    rezulto.classList.remove('informo');
+    rezulto.innerHTML = `<img src="${url}" alt="Paĝo de vortaro">`;
+}
+
+function montriInformon() {
+    fetch('informoj.html')
+        .then(response => {
+            if (!response.ok) throw new Error('Ne eblis ŝargi la informon.');
+            return response.text();
+        })
+        .then(html => {
+            const rezulto = document.getElementById('rezulto');
+            rezulto.classList.add('informo');
+            rezulto.innerHTML = html;
+        })
+        .catch(error => {
+            const rezulto = document.getElementById('rezulto');
+            rezulto.classList.remove('informo');
+            rezulto.innerText = 'Eraro dum ŝargo de la informoj.';
+            console.error(error);
+        });
 }
 
 function montriMesagxon(teksto) {
-    document.getElementById('rezulto').innerHTML = teksto;
+    const rezulto = document.getElementById('rezulto');
+    rezulto.classList.remove('informo');
+    rezulto.textContent = teksto;
 }
 
 function montriPagxonLauxNumero(teksto) {

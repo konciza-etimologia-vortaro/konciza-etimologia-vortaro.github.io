@@ -40,11 +40,22 @@ svg.ikono:hover {
     color: #009E60;
 }
 
-
 #rezulto {
     margin-top: 1em;
+    text-align: center;
 }
 
+#rezulto.informo {
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    text-align: left;
+}
+
+#rezulto.informo li {
+    margin-bottom: 0.3em;
+}
 
 .kontroloj {
     align-items: center;
