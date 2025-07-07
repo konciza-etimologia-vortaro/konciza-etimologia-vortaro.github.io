@@ -1,6 +1,6 @@
 Montri paĝojn de Auntaŭparolo, Mallongigoj, alfabetoj ktp.
 Nombri vortserĉojn kaj uzantojn.
-Forigi kapvortojn en pluralo.
+Prilabori kapvortojn en pluralo.
 
 Aldoni instrukciojn pri ne-ordigitaj-kapvortoj.json:
 - Vortoj devas esti minusklaj.
