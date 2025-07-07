@@ -101,11 +101,11 @@ document.addEventListener('keydown', function (event) {
 
     switch (event.key) {
         case 'ArrowRight':
-            if (document.activeElement.tagName !== 'INPUT') sekva();
+            if (document.activeElement !== sercxo) sekva();
             break;
 
         case 'ArrowLeft':
-            if (document.activeElement.tagName !== 'INPUT') antauxa();
+            if (document.activeElement !== sercxo) antauxa();
             break;
 
         case 'F2':
@@ -118,13 +118,17 @@ document.addEventListener('keydown', function (event) {
             break;
 
         case 'End':
-            montriBildon(518);
-            event.preventDefault();
+            if (document.activeElement !== sercxo) {
+                montriBildon(518);
+                event.preventDefault();
+            }
             break;
 
         case 'Home':
-            montriBildon(1);
-            event.preventDefault();
+            if (document.activeElement !== sercxo) {
+                montriBildon(1);
+                event.preventDefault();
+            }
             break;
     }
 });
@@ -263,7 +267,7 @@ function serĉiEnUnuajKapvortoj(teksto) {
 
     while (maldekstro <= dekstro) {
         let mezo = Math.floor((maldekstro + dekstro) / 2);
-        let kapvorto = unuajKapvortojObj[mezo].kapvorto.split("/")[0].toLowerCase();
+        let kapvorto = unuajKapvortojObj[mezo].kapvorto.toLowerCase();
         let normaligitaKapvorto = normaligiPorOrdo(kapvorto);
 
         if (normaligitaTeksto >= normaligitaKapvorto) {
