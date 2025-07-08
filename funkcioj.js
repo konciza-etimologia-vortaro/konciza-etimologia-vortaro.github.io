@@ -70,6 +70,38 @@ document.getElementById('sercxo').addEventListener('keydown', function (event) {
     }
 });
 
+document.addEventListener('click', function (event) {
+    const elemento = event.target.closest('.ligilo-pagxo');
+    if (elemento) {
+        const paĝo = parseInt(elemento.dataset.pagxo, 10);
+        if (!isNaN(paĝo)) {
+            montriBildon(paĝo);
+        }
+    }
+});
+
+window.addEventListener('hashchange', legiVortonElURL);
+
+function antauxa() {
+    if (nunaBildo <= 1) {
+        montriBildon(518);
+    } else {
+        montriBildon(nunaBildo - 1);
+    }
+}
+
+function determiniBazanVojon() {
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        // cd C:\Data\vscode
+        // python -m http.server
+        // http://localhost:8000/konciza-etimologia-vortaro.github.io/
+        return '../kev-webp/';
+    } else {
+        // https://konciza-etimologia-vortaro.github.io/
+        return 'https://konciza-etimologia-vortaro.github.io/kev-webp/';
+    }
+}
+
 document.addEventListener('keydown', function (event) {
     const sercxo = document.getElementById('sercxo');
 
@@ -132,29 +164,6 @@ document.addEventListener('keydown', function (event) {
             break;
     }
 });
-
-
-window.addEventListener('hashchange', legiVortonElURL);
-
-function antauxa() {
-    if (nunaBildo <= 1) {
-        montriBildon(518);
-    } else {
-        montriBildon(nunaBildo - 1);
-    }
-}
-
-function determiniBazanVojon() {
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        // cd C:\Data\vscode
-        // python -m http.server
-        // http://localhost:8000/konciza-etimologia-vortaro.github.io/
-        return '../kev-webp/';
-    } else {
-        // https://konciza-etimologia-vortaro.github.io/
-        return 'https://konciza-etimologia-vortaro.github.io/kev-webp/';
-    }
-}
 
 function estasNumero(teksto) {
     return /^\d+$/.test(teksto);

@@ -66,6 +66,10 @@ svg.ikono:hover {
     margin-top: 1em;
 }
 
+.ligilo-pagxo {
+    cursor: pointer;
+}
+
 .mallonga {
     display: none;
 }
@@ -84,6 +88,10 @@ a.mallonga:hover,
 .plena a:hover {
     color: #009E60;
     cursor: pointer;
+}
+
+.sublinio {
+    text-decoration: underline;
 }
 
 @media (max-width: 500px) {
