@@ -62,14 +62,6 @@ Promise.all([
         console.error(eraro);
     });
 
-document.getElementById('sercxo').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        sercxi();
-        // Movi la fokuson for post premado de Enter, kvazaŭ oni klakus ekstere
-        this.blur();
-    }
-});
-
 document.addEventListener('click', function (event) {
     const elemento = event.target.closest('.ligilo-pagxo');
     if (elemento) {
@@ -81,6 +73,25 @@ document.addEventListener('click', function (event) {
 });
 
 window.addEventListener('hashchange', legiVortonElURL);
+
+document.getElementById('sercxo').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        sercxi();
+        // Movi la fokuson for post premado de Enter, kvazaŭ oni klakus ekstere
+        this.blur();
+    }
+});
+
+function aktualigiRetposxton() {
+    const uzanto = "mcorne";
+    const domajno = "yahoo.com";
+    const adreso = uzanto + "@" + domajno;
+    const ligilo = "mailto:" + adreso;
+    const celloko = document.getElementById("retposxto");
+    if (celloko) {
+        celloko.innerHTML = 'Retpoŝto: <a href="' + ligilo + '">' + adreso + '</a>';
+    }
+}
 
 function antauxa() {
     if (nunaBildo <= 1) {
@@ -201,7 +212,6 @@ function legiVortonElURL() {
     }
 }
 
-
 function montriBildon(bildo) {
     nunaBildo = bildo;
     const numero = bildo.toString().padStart(3, "0");
@@ -222,6 +232,7 @@ function montriInformon() {
             const rezulto = document.getElementById('rezulto');
             rezulto.classList.add('informo');
             rezulto.innerHTML = html;
+            aktualigiRetposxton();
         })
         .catch(error => {
             const rezulto = document.getElementById('rezulto');
