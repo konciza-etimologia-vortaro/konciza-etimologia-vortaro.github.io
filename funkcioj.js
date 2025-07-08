@@ -105,6 +105,9 @@ function determiniBazanVojon() {
 document.addEventListener('keydown', function (event) {
     const sercxo = document.getElementById('sercxo');
 
+    // Ignori klavkombinojn kun Ctrl, Alt, aŭ Meta
+    if (event.ctrlKey || event.altKey || event.metaKey) return;
+
     if (document.activeElement !== sercxo) {
         const litero = event.key.toLowerCase();
 
