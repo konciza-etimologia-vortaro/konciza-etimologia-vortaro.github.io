@@ -1,6 +1,7 @@
 :root {
-    --esperanto-verde: #009E60;
-    --esperanto-verde-klara: #00cc88;
+    --primary-color: #007A4A;
+    --primary-color-light: #009E60;
+    --border-color: #C0E7D3;
 }
 
 body {
@@ -15,17 +16,17 @@ body {
 h1,
 h2,
 .plena a {
-    color: var(--esperanto-verde);
+    color: var(--primary-color);
 }
 
 a {
-    color: var(--esperanto-verde);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--esperanto-verde-klara);
+    color: var(--primary-color-light);
     cursor: pointer;
 }
 
@@ -36,7 +37,7 @@ button {
 }
 
 img {
-    border: 2px solid var(--esperanto-verde);
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     height: 85vh;
@@ -50,14 +51,14 @@ input {
     max-width: 300px;
     min-width: 50px;
     padding: 0.5em;
-    border: 2px solid var(--esperanto-verde);
+    border: 2px solid var(--border-color);
     border-radius: 6px;
     outline: none;
     transition: border-color 0.2s ease;
 }
 
 input:focus {
-    border-color: var(--esperanto-verde-klara);
+    border-color: var(--primary-color-light);
 }
 
 svg.ikono {
@@ -66,12 +67,12 @@ svg.ikono {
     cursor: pointer;
     vertical-align: middle;
     margin: 0;
-    color: var(--esperanto-verde);
+    color: var(--primary-color);
     transition: color 0.2s ease;
 }
 
 svg.ikono:hover {
-    color: var(--esperanto-verde-klara);
+    color: var(--primary-color-light);
 }
 
 #rezulto {
@@ -85,7 +86,7 @@ svg.ikono:hover {
     max-width: 700px;
     padding: 1.5em;
     text-align: left;
-    border: 2px solid var(--esperanto-verde);
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
@@ -106,14 +107,14 @@ svg.ikono:hover {
 }
 
 .ligilo-pagxo {
-    color: var(--esperanto-verde);
+    color: var(--primary-color);
     cursor: pointer;
     padding: 0.3em 0;
     transition: color 0.2s ease;
 }
 
 .ligilo-pagxo:hover {
-    color: var(--esperanto-verde-klara);
+    color: var(--primary-color-light);
     text-decoration: underline;
 }
 
@@ -142,6 +143,6 @@ svg.ikono:hover {
         display: inline;
         font-size: 2em;
         font-weight: bold;
-        color: var(--esperanto-verde);
+        color: var(--primary-color);
     }
 }
