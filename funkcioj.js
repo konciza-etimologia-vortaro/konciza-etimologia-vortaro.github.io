@@ -55,7 +55,7 @@ Promise.all([
             bildo
         }));
         neOrdigitajKapvortoj = neordigitaj;
-        legiVortonElURL();
+        sersxiHash();
     })
     .catch(eraro => {
         document.getElementById('rezulto').innerText = 'Eraro dum ŝargo de la datumoj.';
@@ -72,11 +72,11 @@ document.addEventListener('click', function (event) {
     }
 });
 
-window.addEventListener('hashchange', legiVortonElURL);
+window.addEventListener('hashchange', sersxiHash);
 
 document.getElementById('sercxo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-        sercxi();
+        sercxiEnigon();
         // Movi la fokuson for post premado de Enter, kvazaŭ oni klakus ekstere
         this.blur();
     }
@@ -187,29 +187,22 @@ function estasVorto(teksto) {
     return /^[abcĉdefgĝhĥijĵklmnoprsŝtuŭvz]+$/.test(teksto);
 }
 
+function forigiHashon() {
+    history.pushState(null, '', window.location.pathname);
+    document.getElementById('sercxo').value = '';
+    montriMesagxon('');
+}
+
 function ĝisdatigiURLon(teksto) {
+    // Aldoni la serĉon al la retumila historio
     const url = window.location.pathname + '#' + encodeURIComponent(teksto);
-    window.history.replaceState(null, '', url);
+    window.history.pushState(null, '', url);
 }
 
 function konvertiXsistemon(teksto) {
     return teksto.replace(/([cghjsu])x/g, function (_, litero) {
         return xsistemoMapo[litero] || litero + 'x';
     });
-}
-
-function legiVortonElURL() {
-    if (window.location.href.endsWith("#")) {
-        montriMesagxon("");
-        history.replaceState(null, '', window.location.pathname);
-        location.reload();
-    }
-
-    const hash = window.location.hash.slice(1).trim();
-    if (hash) {
-        document.getElementById('sercxo').value = decodeURIComponent(hash);
-        sercxi();
-    }
 }
 
 function montriBildon(bildo) {
@@ -262,10 +255,6 @@ function normaligiPorOrdo(teksto) {
     return teksto.split('').map(litero => esperantaKonverto[litero] || litero).join('');
 }
 
-function preniEnigon() {
-    return document.getElementById('sercxo').value.trim().toLowerCase();
-}
-
 function sekva() {
     if (nunaBildo >= 518) {
         montriBildon(1);
@@ -274,12 +263,31 @@ function sekva() {
     }
 }
 
-function sercxi() {
-    let teksto = preniEnigon();
-    if (!teksto) return;
+function sercxiEnigon() {
+    let teksto = document.getElementById('sercxo').value.trim().toLowerCase();
+    if (teksto) {
+        ĝisdatigiURLon(teksto);
+        sercxiTekston(teksto);
+    }
+}
 
-    ĝisdatigiURLon(teksto);
+function sersxiHash() {
+    const hash = window.location.hash.slice(1).trim();
 
+    if (hash) {
+        document.getElementById('sercxo').value = decodeURIComponent(hash);
+        sercxiTekston(hash);
+    } else {
+        montriMesagxon("");
+    }
+}
+
+function sercxiNeOrdigitajKapvortoj(teksto) {
+    const bildo = neOrdigitajKapvortoj[teksto];
+    montriBildon(bildo);
+}
+
+function sercxiTekston(teksto) {
     if (estasNumero(teksto)) {
         montriPagxonLauxNumero(teksto);
         return;
@@ -292,18 +300,13 @@ function sercxi() {
     }
 
     if (neOrdigitajKapvortoj[teksto]) {
-        sercxiEnNeOrdigitajKapvortoj(teksto);
+        sercxiNeOrdigitajKapvortoj(teksto);
     } else {
-        serĉiEnUnuajKapvortoj(teksto)
+        serĉiUnuajKapvortoj(teksto)
     }
 }
 
-function sercxiEnNeOrdigitajKapvortoj(teksto) {
-    const bildo = neOrdigitajKapvortoj[teksto];
-    montriBildon(bildo);
-}
-
-function serĉiEnUnuajKapvortoj(teksto) {
+function serĉiUnuajKapvortoj(teksto) {
     let normaligitaTeksto = normaligiPorOrdo(teksto);
 
     let maldekstro = 0;

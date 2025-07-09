@@ -11,36 +11,35 @@
 
 <body>
     <h1 class="plena">
-        <a href="#">Konciza Etimologia Vortaro</a>
+        <a role="button" onclick="forigiHashon()">Konciza Etimologia Vortaro</a>
     </h1>
     <div class="kontroloj">
-        <!-- Heroicon: magnifying-glass (outline) -->
-        <a href="#" class="mallonga" title="Konciza Etimologia Vortaro" onclick="location.reload(); return false;">
+        <a role="button" class="mallonga" title="Konciza Etimologia Vortaro" onclick="forigiHashon()">
             KEV
         </a>
         <input type="text" id="sercxo" placeholder="Entajpu vorton aŭ paĝnumeron..." />
 
-        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" onclick="sercxi()" title="Serĉi">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
+        <!-- Heroicon: magnifying-glass (outline) -->
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            onclick="sercxiEnigon()" title="Serĉi">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
         </svg>
 
         <!-- Heroicon: chevron-left (outline) -->
-        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" onclick="antauxa()" title="Antaŭa">
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            onclick="antauxa()" title="Antaŭa">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
 
         <!-- Heroicon: chevron-right (outline) -->
-        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" onclick="sekva()" title="Sekva">
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            onclick="sekva()" title="Sekva">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
 
         <!-- Heroicon: information-circle (outline) -->
-        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" title="Informoj" onclick="montriInformon()">
+        <svg class="ikono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            title="Informoj" onclick="montriInformon()">
             <path stroke-linecap="round" stroke-linejoin="round"
                 d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
         </svg>
