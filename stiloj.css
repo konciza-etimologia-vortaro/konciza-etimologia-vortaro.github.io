@@ -1,8 +1,32 @@
+:root {
+    --esperanto-verde: #009E60;
+    --esperanto-verde-klara: #00cc88;
+}
+
 body {
     font-family: sans-serif;
     text-align: center;
     padding: 1em;
     margin: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+h1,
+h2,
+.plena a {
+    color: var(--esperanto-verde);
+}
+
+a {
+    color: var(--esperanto-verde);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--esperanto-verde-klara);
+    cursor: pointer;
 }
 
 button {
@@ -12,7 +36,9 @@ button {
 }
 
 img {
-    border: 1px solid #ccc;
+    border: 2px solid var(--esperanto-verde);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     height: 85vh;
     margin-top: 1em;
     object-fit: contain;
@@ -24,6 +50,14 @@ input {
     max-width: 300px;
     min-width: 50px;
     padding: 0.5em;
+    border: 2px solid var(--esperanto-verde);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: var(--esperanto-verde-klara);
 }
 
 svg.ikono {
@@ -32,12 +66,12 @@ svg.ikono {
     cursor: pointer;
     vertical-align: middle;
     margin: 0;
-    color: #333;
+    color: var(--esperanto-verde);
     transition: color 0.2s ease;
 }
 
 svg.ikono:hover {
-    color: #009E60;
+    color: var(--esperanto-verde-klara);
 }
 
 #rezulto {
@@ -46,11 +80,16 @@ svg.ikono:hover {
 }
 
 #rezulto.informo {
-    line-height: 1.4;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 1em;
+    line-height: 1.6;
+    margin: 1em auto;
+    max-width: 700px;
+    padding: 1.5em;
     text-align: left;
+    border: 2px solid var(--esperanto-verde);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    color: #222;
 }
 
 #rezulto.informo li {
@@ -67,7 +106,19 @@ svg.ikono:hover {
 }
 
 .ligilo-pagxo {
+    color: var(--esperanto-verde);
     cursor: pointer;
+    padding: 0.3em 0;
+    transition: color 0.2s ease;
+}
+
+.ligilo-pagxo:hover {
+    color: var(--esperanto-verde-klara);
+    text-decoration: underline;
+}
+
+.ligilo-pagxo .sublinio {
+    text-decoration: none;
 }
 
 .mallonga {
@@ -76,18 +127,6 @@ svg.ikono:hover {
 
 .plena {
     display: block;
-}
-
-a.mallonga,
-.plena a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a.mallonga:hover,
-.plena a:hover {
-    color: #009E60;
-    cursor: pointer;
 }
 
 .sublinio {
@@ -103,5 +142,6 @@ a.mallonga:hover,
         display: inline;
         font-size: 2em;
         font-weight: bold;
+        color: var(--esperanto-verde);
     }
 }
