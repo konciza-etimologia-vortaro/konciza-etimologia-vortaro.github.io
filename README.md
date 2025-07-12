@@ -27,8 +27,8 @@ https://konciza-etimologia-vortaro.github.io/.
 
 - La formato estas *"vorto": bildnumero*.
 - La vorto estas kutime la unua vorto aperanta sur la paĝo.
-- Se tiu vorto ne kongruas kun la ĝusta alfabeta ordo (ofte ĉe radikoj), estas elektita la unua el la sekvaj vortoj, kiu troviĝas en la ĝusta alfabeta pozicio.
-- Ekzemplo: *aleatora* estas uzata anstataŭ *aleo* por bildnumero 29 (paĝo 15), ĉar *aleo* aperas antaŭ *aleatora*.
+- Se tiu vorto ne kongruas kun la ĝusta alfabeta ordo (ofte ĉe radikoj), estas elektita la unua el la sekvaj vortoj, kiu troviĝas en la ĝusta alfabeta pozicio, ekz. *aleatora* estas uzata anstataŭ *aleo* por bildnumero 29 (paĝo 15), ĉar *aleo* aperas antaŭ *aleatora*.
+- Plurala vorto devas esti konvertita al singulara, ekz. *bivalvo* anstataŭ *bivalvoj* ĉe bildnumero 72 (paĝo 58).
 - La **ordo de vortoj laŭ bildnumeroj neniam devas esti ŝanĝita**, por ke la serĉalgoritmo funkciu ĝuste.
 
 ### Dosiero *ne-ordigitaj-kapvortoj.json*
@@ -44,6 +44,7 @@ https://konciza-etimologia-vortaro.github.io/.
 - Ne aldonu duan kapvorton se ĝi jam ekzistas aliloke. Ekzemplo:
   + *dzeta aŭ zeta* ĉe bildnumero 122 (paĝo 108)
   + *zeta aŭ dzeta* ĉe bildnumero 514 (paĝo 500)
+- Al plurala vorto devas esti aldonita la singulara, ekz. *braĥiuro* sub *braĥiuroj* ĉe bildnumero 78 (paĝo 64).
 - **Ne ŝanĝu la ordon de la vortoj** en la dosiero, ĉar ĝi reflektas ilian ordon en la vortaro kaj faciligas prizorgadon.
 
 ### Retpaĝsimbolo *favicon.ico*
