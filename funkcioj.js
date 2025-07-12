@@ -272,10 +272,11 @@ function sercxiEnigon() {
 }
 
 function sersxiHash() {
-    const hash = window.location.hash.slice(1).trim();
+    let hash = window.location.hash.slice(1).trim();
 
     if (hash) {
-        document.getElementById('sercxo').value = decodeURIComponent(hash);
+        hash = decodeURIComponent(hash);
+        document.getElementById('sercxo').value = hash;
         sercxiTekston(hash);
     } else {
         montriMesagxon("");
