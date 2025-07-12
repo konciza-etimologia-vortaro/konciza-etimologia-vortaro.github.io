@@ -1,15 +1,4 @@
 Nombri vortserĉojn kaj uzantojn per Statcounter aŭ alia ilo.
 Prilabori kapvortojn en pluralo.
-Aldoni la retmesaĝan permeson de Cherpillod en dosieron, kaj ligi ĝin el la informpaĝo.
-Ŝanĝi la koloron de titoloj, ligiloj kaj ikonoj al verda.
 Plibonigi la montradon de tuta bildo en kaj komputiloj kaj poŝtelefonoj.
-Kompleti README dosierojn.
-
-Aldoni instrukciojn por ne-ordigitaj-kapvortoj.json:
-- Vortoj devas esti minusklaj.
-- Ne ŝanĝi la ordon por pli simpla prizorgado.
-- Klarigi la prilaboron de vortoj ne en ĝusta alfabeta ordo.
-- Ne aldoni duan kapvorton se ĝi jam ekzistas, ekz. "zeta aŭ dzeta" p. 500 kaj "dzeta aŭ zeta" p. 108.
-
-Aldoni instrukciojn por pagxaj-unuaj-kapvortoj.json:
-- ktp.
+Centrigi (ne)parajn paĝojn (mal)dekstren
