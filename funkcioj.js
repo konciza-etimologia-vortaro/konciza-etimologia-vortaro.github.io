@@ -1,6 +1,7 @@
 let lastLitero = null;
 let neOrdigitajKapvortoj = [];
 let nunaBildo = 1;
+let tuŝoKomencoX = null;
 let unuajKapvortoj = [];
 let unuajKapvortojObj = [];
 
@@ -177,6 +178,29 @@ document.addEventListener('keydown', function (event) {
             }
             break;
     }
+});
+
+document.addEventListener('touchstart', function (e) {
+    tuŝoKomencoX = e.touches[0].clientX;
+});
+
+document.addEventListener('touchend', function (e) {
+    if (tuŝoKomencoX === null) return;
+
+    let tuŝoFinoX = e.changedTouches[0].clientX;
+    let diferenco = tuŝoFinoX - tuŝoKomencoX;
+
+    if (Math.abs(diferenco) > 50) { // sojlo por eviti falsajn gestojn
+        if (diferenco < 0) {
+            // Ŝovo maldekstren
+            if (document.activeElement !== sercxo) antauxa();
+        } else {
+            // Ŝovo dekstren
+            if (document.activeElement !== sercxo) sekva();
+        }
+    }
+
+    tuŝoKomencoX = null;
 });
 
 function estasNumero(teksto) {
