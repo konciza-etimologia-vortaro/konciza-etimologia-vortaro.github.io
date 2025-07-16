@@ -193,10 +193,10 @@ document.addEventListener('touchend', function (e) {
     if (Math.abs(diferenco) > 50) { // sojlo por eviti falsajn gestojn
         if (diferenco < 0) {
             // Ŝovo maldekstren
-            if (document.activeElement !== sercxo) antauxa();
+            if (document.activeElement !== sercxo) sekva();
         } else {
             // Ŝovo dekstren
-            if (document.activeElement !== sercxo) sekva();
+            if (document.activeElement !== sercxo) antauxa();
         }
     }
 
