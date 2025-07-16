@@ -1,18 +1,22 @@
 :root {
+    /* Koloroj */
     --primary-color: #3F51B5;
     --primary-color-light: #6C7CFF;
     --border-color: #E0E8FF;
 }
 
+/* Baza korpo */
 body {
-    font-family: sans-serif;
-    text-align: center;
-    padding: 1em;
     margin: 0;
+    padding: 1em;
+    font-family: sans-serif;
     color: #000;
     background-color: #fff;
+    text-align: center;
+    line-height: 1.6;
 }
 
+/* Titoloj kaj ligiloj */
 h1,
 h2,
 .plena a {
@@ -25,32 +29,35 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
     color: var(--primary-color-light);
+    text-decoration: underline;
     cursor: pointer;
 }
 
+/* Butonoj */
 button {
-    font-size: 1em;
-    padding: 0.5em;
     flex: 0 0 auto;
+    padding: 0.5em;
+    font-size: 1em;
 }
 
+/* Bildoj */
 img {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 1em;
     border: 2px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    height: 85vh;
-    margin-top: 1em;
-    object-fit: contain;
 }
 
+/* Tekstaj enigoj */
 input {
     flex: 1 1 150px;
-    font-size: 1em;
     max-width: 300px;
     min-width: 50px;
     padding: 0.5em;
+    font-size: 1em;
     border: 2px solid var(--border-color);
     border-radius: 6px;
     outline: none;
@@ -61,13 +68,14 @@ input:focus {
     border-color: var(--primary-color-light);
 }
 
+/* SVG ikonoj */
 svg.ikono {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    vertical-align: middle;
+    width: 1.7rem;
+    height: 1.7rem;
     margin: 0;
     color: var(--primary-color);
+    cursor: pointer;
+    vertical-align: middle;
     transition: color 0.2s ease;
 }
 
@@ -75,41 +83,44 @@ svg.ikono:hover {
     color: var(--primary-color-light);
 }
 
+/* Rezultsekcio */
 #rezulto {
     margin-top: 1em;
     text-align: center;
 }
 
 #rezulto.informo {
-    line-height: 1.6;
+    max-width: 80ch;
     margin: 1em auto;
-    max-width: 700px;
     padding: 1.5em;
+    line-height: 1.6;
     text-align: left;
+    color: #222;
+    background-color: #f9f9f9;
     border: 2px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    color: #222;
 }
 
 #rezulto.informo li {
     margin-bottom: 0.3em;
 }
 
+/* Kontroloj */
 .kontroloj {
-    align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    gap: 0.5em;
     justify-content: center;
+    align-items: center;
+    gap: 0.5em;
     margin-top: 1em;
 }
 
+/* Ligilo pagxo */
 .ligilo-pagxo {
+    padding: 0.3em 0;
     color: var(--primary-color);
     cursor: pointer;
-    padding: 0.3em 0;
     transition: color 0.2s ease;
 }
 
@@ -122,18 +133,21 @@ svg.ikono:hover {
     text-decoration: none;
 }
 
-.mallonga {
-    display: none;
-}
-
+/* Ŝaltaj klasoj */
 .plena {
     display: block;
 }
 
+.mallonga {
+    display: none;
+}
+
+/* Tekstaj efektoj */
 .sublinio {
     text-decoration: underline;
 }
 
+/* Respondeca dezajno */
 @media (max-width: 500px) {
     .plena {
         display: none;
