@@ -221,6 +221,7 @@ function ĝisdatigiURLon(teksto) {
     // Aldoni la serĉon al la retumila historio
     const url = window.location.pathname + '#' + encodeURIComponent(teksto);
     window.history.pushState(null, '', url);
+    raportiSercxonAlGoatCounter();
 }
 
 function konvertiXsistemon(teksto) {
@@ -277,6 +278,14 @@ function montriPagxonLauxNumero(teksto) {
 
 function normaligiPorOrdo(teksto) {
     return teksto.split('').map(litero => esperantaKonverto[litero] || litero).join('');
+}
+
+function raportiSercxonAlGoatCounter() {
+    if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({
+            path: location.pathname + location.search + location.hash
+        });
+    }
 }
 
 function sekva() {
