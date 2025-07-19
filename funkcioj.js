@@ -59,7 +59,7 @@ Promise.all([
         sersxiHash();
     })
     .catch(eraro => {
-        document.getElementById('rezulto').innerText = 'Eraro dum ŝargo de la datumoj.';
+        document.getElementById('rezulto').innerText = 'Eraro dum ŝarĝado de la datumoj.';
         console.error(eraro);
     });
 
@@ -255,7 +255,7 @@ function montriInformon() {
         .catch(error => {
             const rezulto = document.getElementById('rezulto');
             rezulto.classList.remove('informo');
-            rezulto.innerText = 'Eraro dum ŝargo de la informoj.';
+            rezulto.innerText = 'Eraro dum ŝarĝado de la informoj.';
             console.error(error);
         });
 }
@@ -363,7 +363,7 @@ function serĉiUnuajKapvortoj(teksto) {
     if (trovita >= 0) {
         montriBildon(unuajKapvortojObj[trovita].bildo);
     } else {
-        montriMesagxon('Neniu kongruo trovita.');
+        montriMesagxon('Neniu kongruaĵo trovita.');
     }
 }
 

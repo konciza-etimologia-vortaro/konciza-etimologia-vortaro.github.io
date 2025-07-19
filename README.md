@@ -51,4 +51,28 @@ https://konciza-etimologia-vortaro.github.io/.
 
 La retpaĝsimbolo estas kreita per:
 [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
-uzante la tiparfamilion *Koulen* kaj la bluan koloron difinitan en *stiloj.css* (`primary-color: #3F51B5`).
+uzante la tiparfamilion *Koulen* kaj la bluan koloron difinitan en *stiloj.css* (primary-color: #3F51B5).
+
+---
+
+## Testo de la retaplikaĵo
+
+Por testi la retaplikaĵon, instalitan ekz. ĉe *C:\Data\vscode*, kun Visual Studio Code en Windows,
+sekvu la jenajn paŝojn:
+
+### Dosierstrukturo
+- La aplikaĵo estas en:<br>
+*C:\Data\vscode\konciza-etimologia-vortaro.github.io*
+- La bildoj/paĝoj estas en:<br>
+*C:\Data\vscode\kev-webp*
+
+### Lanĉi HTTP-servilon
+En Visual Studio Code aŭ en komanda linio, iru al la radika dosierujo:<br>
+```bash
+cd C:\Data\vscode
+python -m http.server
+```
+
+### Testi en retumilo
+Malfermu en retumilo la jenan adreson:<br>
+http://localhost:8000/konciza-etimologia-vortaro.github.io/
