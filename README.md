@@ -51,7 +51,7 @@ https://konciza-etimologia-vortaro.github.io/.
 
 La retpaĝsimbolo estas kreita per:
 [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
-uzante la tiparfamilion *Koulen* kaj la bluan koloron difinitan en *stiloj.css* (primary-color: #3F51B5).
+uzante la tiparfamilion *Koulen*, tiparan grandecon de 90px, kaj la bluan koloron difinitan en *stiloj.css* (primary-color: #3F51B5).
 
 ---
 
