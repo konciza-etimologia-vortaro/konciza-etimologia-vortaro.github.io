@@ -3,7 +3,7 @@
 Ĉi tiu deponejo enhavas la fontkodon de la reta aplikaĵo por la
 [*Konciza Etimologia Vortaro* de André Cherpillod](https://eo.wikipedia.org/wiki/Konciza_Etimologia_Vortaro).
 
-La aplikaĵo ebligas serĉi vorton kaj vidi la taŭgan paĝon el la vortaro, kiu estis skanita el papera ekzemplero kaj konservita en:
+La aplikaĵo ebligas serĉi vorton kaj vidi la taŭgan paĝon de la vortaro, kiu estis skanita el papera ekzemplero kaj konservita en:
 https://github.com/konciza-etimologia-vortaro/kev-webp.
 
 Rete uzebla versio disponeblas ĉe:
@@ -14,7 +14,7 @@ https://konciza-etimologia-vortaro.github.io/.
 ## Trajtoj
 
 - Rapida serĉo de vortoj
-- Reala bildmontro el la vortaro
+- Reala bildmontro de la vortaro
 - Funkcias sen servilo (nur statika HTML/JS)
 
 ---
