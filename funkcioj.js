@@ -166,14 +166,14 @@ document.addEventListener('keydown', function (event) {
 
         case 'End':
             if (document.activeElement !== sercxo) {
-                montriBildon(518);
+                window.scrollTo({ top: document.body.scrollHeight });
                 event.preventDefault();
             }
             break;
 
         case 'Home':
             if (document.activeElement !== sercxo) {
-                montriBildon(1);
+                window.scrollTo({ top: 0 });
                 event.preventDefault();
             }
             break;
